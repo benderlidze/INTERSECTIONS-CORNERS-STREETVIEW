@@ -66,25 +66,108 @@
                     console.log('data', data);
                     map.getSource('route').setData(data);
 
-                    // Compute intersections for multiple lines
+                    // Compute intersections for multiple lines and bearing lines
                     const intersections = [];
+                    const bearingLines = [];
                     if (data.type === 'FeatureCollection' && Array.isArray(data.features)) {
                         for (let i = 0; i < data.features.length; i++) {
                             for (let j = i + 1; j < data.features.length; j++) {
                                 const inter = turf.lineIntersect(data.features[i], data.features[j]);
-                                // Merge found intersections
-                                inter.features.forEach(pt => intersections.push(pt));
+                                inter.features.forEach(point => {
+                                    // Only process if geometry coordinates exist and are non-empty
+                                    if (point.geometry && Array.isArray(point.geometry.coordinates) && point.geometry.coordinates.length) {
+                                        intersections.push(point);
+                                        // Get bearing from each line using the nearest segment
+                                        const snapped1 = turf.nearestPointOnLine(data.features[i], point);
+                                        const snapped2 = turf.nearestPointOnLine(data.features[j], point);
+                                        let bearing1, bearing2;
+                                        const coords1 = data.features[i].geometry.coordinates;
+                                        const coords2 = data.features[j].geometry.coordinates;
+                                        
+                                        // For first feature: try next coordinate, if not available use previous
+                                        if (snapped1.properties.index !== undefined) {
+                                            if (coords1[snapped1.properties.index + 1]) {
+                                                bearing1 = turf.bearing(
+                                                    turf.point(coords1[snapped1.properties.index]),
+                                                    turf.point(coords1[snapped1.properties.index + 1])
+                                                );
+                                            } else if (snapped1.properties.index > 0) {
+                                                bearing1 = turf.bearing(
+                                                    turf.point(coords1[snapped1.properties.index - 1]),
+                                                    turf.point(coords1[snapped1.properties.index])
+                                                );
+                                            }
+                                        }
+                                        
+                                        // For second feature: try next coordinate, if not available use previous
+                                        if (snapped2.properties.index !== undefined) {
+                                            if (coords2[snapped2.properties.index + 1]) {
+                                                bearing2 = turf.bearing(
+                                                    turf.point(coords2[snapped2.properties.index]),
+                                                    turf.point(coords2[snapped2.properties.index + 1])
+                                                );
+                                            } else if (snapped2.properties.index > 0) {
+                                                bearing2 = turf.bearing(
+                                                    turf.point(coords2[snapped2.properties.index - 1]),
+                                                    turf.point(coords2[snapped2.properties.index])
+                                                );
+                                            }
+                                        }
+                                        
+                                        if (bearing1 !== undefined && bearing2 !== undefined) {
+                                            // Average bearing (modify if a different logic is needed)
+                                            const avgBearing = (bearing1 + bearing2) / 2;
+                                            // Create a destination point (5 meters away)
+                                            const destination = turf.destination(point, 0.005, avgBearing, { units: 'kilometers' });
+                                            bearingLines.push(turf.lineString([point.geometry.coordinates, destination.geometry.coordinates]));
+                                        }
+                                    }
+                                });
                             }
                         }
                     }
                     console.log('intersections', intersections);
+                    console.log('bearingLines', bearingLines);
 
-                    // Add a marker for each intersection
-                    intersections.forEach(point => {
-                        new maplibregl.Marker({ color: "blue" })
-                            .setLngLat(point.geometry.coordinates)
-                            .addTo(map);
+                    // Remove markers and add intersections as red dots in a new layer
+                    map.addSource('intersectionPoints', {
+                        type: 'geojson',
+                        data: {
+                            type: 'FeatureCollection',
+                            features: intersections
+                        }
                     });
+                    map.addLayer({
+                        id: 'intersectionPoints',
+                        type: 'circle',
+                        source: 'intersectionPoints',
+                        paint: {
+                            'circle-radius': 5,
+                            'circle-color': 'red'
+                        }
+                    });
+
+                    // Add bearing lines to the map if any were found
+                    if (bearingLines.length) {
+                        map.addSource('bearingLines', {
+                            type: 'geojson',
+                            data: {
+                                type: 'FeatureCollection',
+                                features: bearingLines
+                            }
+                        });
+                        map.addLayer({
+                            id: 'bearingLines',
+                            type: 'line',
+                            source: 'bearingLines',
+                            layout: {},
+                            paint: {
+                                'line-color': 'green',
+                                'line-width': 2,
+                                'line-dasharray': [2, 1]
+                            }
+                        });
+                    }
                 });
         });
     </script>
