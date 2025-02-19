@@ -1,0 +1,1040 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2025-02-19T08:29:44Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/21353356",
+        "highway": "residential",
+        "lanes": "2",
+        "lit": "yes",
+        "maxspeed": "25 mph",
+        "name": "East Sycamore Street",
+        "name:etymology:wikidata": "Q156944",
+        "sidewalk": "both",
+        "surface": "paving_stones"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-82.985769, 39.948795],
+          [-82.9849278, 39.9487583],
+          [-82.9843655, 39.9487337],
+          [-82.9841034, 39.9487226],
+          [-82.9833359, 39.9486875],
+          [-82.9831231, 39.9486778],
+          [-82.9827281, 39.9486599],
+          [-82.98262, 39.948655]
+        ]
+      },
+      "id": "way/21353356"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/21361158",
+        "highway": "residential",
+        "lanes": "2",
+        "lit": "yes",
+        "maxspeed": "25 mph",
+        "name": "Beech Street",
+        "sidewalk": "both",
+        "surface": "paving_stones"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-82.985769, 39.948795],
+          [-82.9858039, 39.9483195],
+          [-82.985842, 39.9478054],
+          [-82.9858894, 39.9473222],
+          [-82.985918, 39.946828],
+          [-82.985925, 39.946739],
+          [-82.9859544, 39.9463436],
+          [-82.9859632, 39.9462256],
+          [-82.98599, 39.945866],
+          [-82.985995, 39.945792],
+          [-82.9860181, 39.9454866],
+          [-82.9860274, 39.9453638],
+          [-82.986047, 39.945104],
+          [-82.9860721, 39.9447863],
+          [-82.9860752, 39.9447465],
+          [-82.9861008, 39.9444187],
+          [-82.9861059, 39.9443473]
+        ]
+      },
+      "id": "way/21361158"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/21372006",
+        "highway": "residential",
+        "lane_markings": "no",
+        "lanes": "2",
+        "lit": "yes",
+        "maxspeed": "25 mph",
+        "name": "East Kossuth Street",
+        "name:etymology": "Lajos Kossuth",
+        "name:etymology:wikidata": "Q157040",
+        "parking:lane:both": "parallel",
+        "parking:lane:both:parallel": "on_street",
+        "sidewalk": "both",
+        "sidewalk:both:surface": "concrete",
+        "surface": "paving_stones"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-82.997398, 39.945473],
+          [-82.9972631, 39.9454885],
+          [-82.9972298, 39.9454923],
+          [-82.9966725, 39.9455563],
+          [-82.996501, 39.945576],
+          [-82.995659, 39.945674],
+          [-82.9948833, 39.9457633],
+          [-82.994738, 39.94578],
+          [-82.9945933, 39.9457968],
+          [-82.993867, 39.945881],
+          [-82.9931382, 39.9459643],
+          [-82.993001, 39.94598],
+          [-82.9928704, 39.9459949],
+          [-82.992157, 39.946076],
+          [-82.991632, 39.946136],
+          [-82.9912133, 39.9461797],
+          [-82.9911527, 39.9461623],
+          [-82.9911372, 39.9461334],
+          [-82.9911196, 39.9460706],
+          [-82.9910949, 39.9460444],
+          [-82.99107, 39.946028],
+          [-82.990708, 39.946014],
+          [-82.9905133, 39.9460035],
+          [-82.99041, 39.945998],
+          [-82.990129, 39.9459844],
+          [-82.989893, 39.945973],
+          [-82.9890263, 39.9459329],
+          [-82.988899, 39.945927],
+          [-82.988447, 39.945906],
+          [-82.9878889, 39.9458783],
+          [-82.9875, 39.945859],
+          [-82.9872376, 39.9458471],
+          [-82.985995, 39.945792]
+        ]
+      },
+      "id": "way/21372006"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/21372011",
+        "highway": "residential",
+        "lanes": "2",
+        "lit": "yes",
+        "maxspeed": "25 mph",
+        "name": "East Kossuth Street",
+        "name:etymology": "Lajos Kossuth",
+        "name:etymology:wikidata": "Q157040",
+        "sidewalk": "both",
+        "surface": "paving_stones"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-82.98599, 39.945866],
+          [-82.9851665, 39.9458309],
+          [-82.9843238, 39.9457909],
+          [-82.9835021, 39.9457612],
+          [-82.9830634, 39.9457431],
+          [-82.982951, 39.9457384],
+          [-82.982844, 39.945734]
+        ]
+      },
+      "id": "way/21372011"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/21384885",
+        "highway": "residential",
+        "lanes": "2",
+        "lit": "yes",
+        "maxspeed": "25 mph",
+        "name": "East Columbus Street",
+        "name:etymology": "Christopher Columbus",
+        "name:etymology:wikidata": "Q7322",
+        "sidewalk": "both",
+        "surface": "paving_stones"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-82.997555, 39.946277],
+          [-82.9974107, 39.9462943],
+          [-82.9973789, 39.9462981],
+          [-82.9968372, 39.946363],
+          [-82.996662, 39.946384],
+          [-82.9959319, 39.9464626],
+          [-82.995817, 39.946475],
+          [-82.9957242, 39.946486],
+          [-82.9950297, 39.946568],
+          [-82.994894, 39.946584],
+          [-82.9947461, 39.9466006],
+          [-82.994021, 39.946682],
+          [-82.993162, 39.946782],
+          [-82.99233, 39.946875],
+          [-82.9918723, 39.9469258],
+          [-82.991789, 39.946935],
+          [-82.9917028, 39.9469447],
+          [-82.991336, 39.946986],
+          [-82.991253, 39.946991],
+          [-82.991199, 39.94699],
+          [-82.990635, 39.94696],
+          [-82.9900525, 39.9469336],
+          [-82.989819, 39.946923],
+          [-82.9892534, 39.9468966],
+          [-82.9889286, 39.9468814],
+          [-82.988792, 39.946875],
+          [-82.988368, 39.946855],
+          [-82.9878059, 39.9468267],
+          [-82.987494, 39.946811],
+          [-82.9871536, 39.9467983]
+        ]
+      },
+      "id": "way/21384885"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/21389143",
+        "highway": "service",
+        "lanes": "2",
+        "maxspeed": "25 mph",
+        "name": "Alexander Alley",
+        "service": "alley",
+        "sidewalk": "no",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-82.992865, 39.948576],
+          [-82.9922515, 39.9485569],
+          [-82.9921161, 39.9485529],
+          [-82.991402, 39.948514],
+          [-82.990776, 39.948477],
+          [-82.989934, 39.948437],
+          [-82.9893132, 39.948421],
+          [-82.9892026, 39.9484361],
+          [-82.9890329, 39.9484498],
+          [-82.9878771, 39.9483766],
+          [-82.9875211, 39.9483652],
+          [-82.9866489, 39.9483471],
+          [-82.9858039, 39.9483195],
+          [-82.98497, 39.9482763],
+          [-82.9841389, 39.9482315],
+          [-82.9833682, 39.9482032],
+          [-82.9833213, 39.9482014],
+          [-82.9826527, 39.9481634]
+        ]
+      },
+      "id": "way/21389143"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/21395715",
+        "highway": "residential",
+        "lanes": "2",
+        "lit": "yes",
+        "maxspeed": "25 mph",
+        "name": "Bruck Street",
+        "oneway": "no",
+        "sidewalk": "both",
+        "surface": "paving_stones"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-82.9871096, 39.9473822],
+          [-82.9871536, 39.9467983],
+          [-82.987212, 39.9462789],
+          [-82.9872376, 39.9458471],
+          [-82.9872786, 39.9454245],
+          [-82.9873245, 39.9448459],
+          [-82.9873519, 39.9444894],
+          [-82.987354, 39.944411]
+        ]
+      },
+      "id": "way/21395715"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/21397554",
+        "cycleway": "shared_lane",
+        "highway": "tertiary",
+        "lanes": "2",
+        "lit": "yes",
+        "maxspeed": "35 mph",
+        "name": "East Whittier Street",
+        "parking:both": "lane",
+        "parking:both:orientation": "parallel",
+        "sidewalk": "both",
+        "surface": "asphalt",
+        "width": "20'",
+        "width:carriageway": "20'"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-82.990018, 39.9445551],
+          [-82.9899336, 39.9445497],
+          [-82.9898383, 39.9445439],
+          [-82.9898334, 39.9445436],
+          [-82.9894729, 39.9445243],
+          [-82.9891453, 39.9445074],
+          [-82.9886037, 39.9444787],
+          [-82.9885717, 39.9444771],
+          [-82.987354, 39.944411],
+          [-82.9861059, 39.9443473],
+          [-82.9857826, 39.9443306],
+          [-82.9852722, 39.9443043],
+          [-82.9844482, 39.9442621],
+          [-82.9836107, 39.9442121],
+          [-82.9835012, 39.9442062]
+        ]
+      },
+      "id": "way/21397554"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/21399141",
+        "highway": "residential",
+        "lanes": "2",
+        "maxspeed": "25 mph",
+        "name": "South Ninth Street",
+        "sidewalk": "no",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-82.986614, 39.9488319],
+          [-82.9866489, 39.9483471],
+          [-82.9866874, 39.9478433]
+        ]
+      },
+      "id": "way/21399141"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/21403569",
+        "highway": "residential",
+        "lanes": "2",
+        "lit": "yes",
+        "maxspeed": "25 mph",
+        "name": "Forest Street",
+        "name:etymology:wikidata": "Q4421",
+        "sidewalk": "both",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-82.9884338, 39.9479219],
+          [-82.9877825, 39.9478926],
+          [-82.9874989, 39.9478798],
+          [-82.9866874, 39.9478433],
+          [-82.985842, 39.9478054],
+          [-82.9850029, 39.9477677],
+          [-82.9841765, 39.947731],
+          [-82.9833362, 39.9476928],
+          [-82.982814, 39.9476693],
+          [-82.9826913, 39.9476645]
+        ]
+      },
+      "id": "way/21403569"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/21403831",
+        "highway": "residential",
+        "lanes": "2",
+        "lit": "yes",
+        "maxspeed": "25 mph",
+        "name": "East Frankfort Street",
+        "name:etymology": "Frankfurt",
+        "name:etymology:wikidata": "Q1794",
+        "sidewalk": "no",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-82.9897716, 39.947503],
+          [-82.9892063, 39.9474757],
+          [-82.988998, 39.947466],
+          [-82.9888771, 39.9474607],
+          [-82.988518, 39.947445],
+          [-82.988342, 39.947438],
+          [-82.9877624, 39.9474117],
+          [-82.987694, 39.9474086],
+          [-82.9871096, 39.9473822],
+          [-82.9867274, 39.9473651],
+          [-82.9864688, 39.9473537],
+          [-82.9858894, 39.9473222],
+          [-82.9850412, 39.9472821],
+          [-82.9842124, 39.9472409],
+          [-82.9833811, 39.9472046],
+          [-82.982861, 39.9471842],
+          [-82.9827337, 39.9471793]
+        ]
+      },
+      "id": "way/21403831"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/21422752",
+        "highway": "residential",
+        "lanes": "2",
+        "lit": "yes",
+        "maxspeed": "25 mph",
+        "name": "Ebner Street",
+        "sidewalk": "both",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-82.9886037, 39.9444787],
+          [-82.9886101, 39.9444101],
+          [-82.9886445, 39.9440434],
+          [-82.988678, 39.943619],
+          [-82.988702, 39.943297],
+          [-82.988726, 39.943043]
+        ]
+      },
+      "id": "way/21422752"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/21422754",
+        "highway": "residential",
+        "lanes": "2",
+        "lit": "yes",
+        "maxspeed": "25 mph",
+        "name": "Ebner Street",
+        "sidewalk": "both",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-82.9884338, 39.9479219],
+          [-82.988351, 39.947502],
+          [-82.988342, 39.947438],
+          [-82.988368, 39.946855],
+          [-82.988447, 39.945906],
+          [-82.9884824, 39.9455006],
+          [-82.9885341, 39.9449077],
+          [-82.9885666, 39.9445429],
+          [-82.9885717, 39.9444771]
+        ]
+      },
+      "id": "way/21422754"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/36370131",
+        "highway": "residential",
+        "lanes": "2",
+        "lit": "yes",
+        "maxspeed": "25 mph",
+        "name": "Reinhard Avenue",
+        "sidewalk": "both",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-82.990246, 39.943633],
+          [-82.990093, 39.9436569],
+          [-82.98999, 39.943673],
+          [-82.989832, 39.943681],
+          [-82.9895505, 39.9436643],
+          [-82.988678, 39.943619],
+          [-82.9874304, 39.9435551],
+          [-82.9858468, 39.9434708],
+          [-82.9845073, 39.9434029],
+          [-82.9836789, 39.9433575],
+          [-82.9831404, 39.9433297],
+          [-82.98303, 39.943324]
+        ]
+      },
+      "id": "way/36370131"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/233637918",
+        "highway": "service",
+        "service": "alley"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-82.9866451, 39.9453954],
+          [-82.9866856, 39.944813]
+        ]
+      },
+      "id": "way/233637918"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/233637926",
+        "highway": "service",
+        "service": "alley"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-82.9878756, 39.9454639],
+          [-82.9879164, 39.9448742]
+        ]
+      },
+      "id": "way/233637926"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/233637934",
+        "highway": "service",
+        "service": "alley"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-82.9860274, 39.9453638],
+          [-82.9866451, 39.9453954],
+          [-82.9872786, 39.9454245]
+        ]
+      },
+      "id": "way/233637934"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/233637935",
+        "highway": "service",
+        "service": "alley"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-82.9884824, 39.9455006],
+          [-82.9878756, 39.9454639],
+          [-82.9872786, 39.9454245]
+        ]
+      },
+      "id": "way/233637935"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/233637939",
+        "highway": "service",
+        "service": "alley"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-82.9860721, 39.9447863],
+          [-82.9866856, 39.944813],
+          [-82.9873245, 39.9448459],
+          [-82.9879164, 39.9448742],
+          [-82.9885341, 39.9449077]
+        ]
+      },
+      "id": "way/233637939"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/298593750",
+        "highway": "service",
+        "lanes": "2",
+        "maxspeed": "15 mph",
+        "name": "Concord Place",
+        "service": "alley",
+        "sidewalk": "no",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-82.9901917, 39.9441261],
+          [-82.9900847, 39.9441204],
+          [-82.9898721, 39.9441098],
+          [-82.9895095, 39.9440896],
+          [-82.9886445, 39.9440434],
+          [-82.9873907, 39.9439758],
+          [-82.9858154, 39.9438932],
+          [-82.9844762, 39.943821],
+          [-82.9836455, 39.9437762],
+          [-82.9831187, 39.9437472],
+          [-82.9829977, 39.9437405]
+        ]
+      },
+      "id": "way/298593750"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/346628995",
+        "highway": "service",
+        "lanes": "2",
+        "maxspeed": "15 mph",
+        "name": "Barth Alley",
+        "sidewalk": "no",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-82.9878771, 39.9483766],
+          [-82.9877825, 39.9478926]
+        ]
+      },
+      "id": "way/346628995"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/351915832",
+        "highway": "service",
+        "lanes": "2",
+        "maxspeed": "25 mph",
+        "name": "Barth Alley",
+        "service": "alley",
+        "sidewalk": "no",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-82.9878889, 39.9458783],
+          [-82.9878472, 39.9463121]
+        ]
+      },
+      "id": "way/351915832"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/351915834",
+        "highway": "service",
+        "lanes": "2",
+        "maxspeed": "25 mph",
+        "name": "Barth Alley",
+        "service": "alley",
+        "sidewalk": "no",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-82.9877624, 39.9474117],
+          [-82.9878059, 39.9468267],
+          [-82.9878472, 39.9463121]
+        ]
+      },
+      "id": "way/351915834"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/351915836",
+        "highway": "residential",
+        "lanes": "2",
+        "maxspeed": "25 mph",
+        "name": "South Grant Avenue",
+        "sidewalk": "no",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-82.9888771, 39.9474607],
+          [-82.9889286, 39.9468814]
+        ]
+      },
+      "id": "way/351915836"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/351915848",
+        "highway": "service",
+        "service": "alley"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-82.9877825, 39.9478926],
+          [-82.987694, 39.9474086]
+        ]
+      },
+      "id": "way/351915848"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/351915853",
+        "highway": "service",
+        "service": "alley"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-82.9865206, 39.9467658],
+          [-82.9865682, 39.9462524]
+        ]
+      },
+      "id": "way/351915853"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/351915856",
+        "highway": "service",
+        "service": "alley"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-82.9864688, 39.9473537],
+          [-82.9865206, 39.9467658]
+        ]
+      },
+      "id": "way/351915856"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/351915860",
+        "highway": "service",
+        "service": "alley"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-82.9859632, 39.9462256],
+          [-82.9865682, 39.9462524],
+          [-82.987212, 39.9462789],
+          [-82.9878472, 39.9463121]
+        ]
+      },
+      "id": "way/351915860"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/390536967",
+        "highway": "service",
+        "lit": "yes",
+        "service": "alley",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-82.9852722, 39.9443043],
+          [-82.9852452, 39.9447021],
+          [-82.9852237, 39.9450664],
+          [-82.985195, 39.9454497],
+          [-82.9851665, 39.9458309],
+          [-82.9851314, 39.9463003],
+          [-82.985095, 39.9467885],
+          [-82.9850412, 39.9472821],
+          [-82.9850029, 39.9477677],
+          [-82.98497, 39.9482763],
+          [-82.9849278, 39.9487583]
+        ]
+      },
+      "id": "way/390536967"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/390536997",
+        "highway": "service",
+        "oneway": "yes",
+        "service": "alley"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-82.9828092, 39.9462013],
+          [-82.9833039, 39.9462206],
+          [-82.9834677, 39.946227],
+          [-82.984292, 39.9462657],
+          [-82.9851314, 39.9463003],
+          [-82.9859544, 39.9463436]
+        ]
+      },
+      "id": "way/390536997"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/390537140",
+        "highway": "service",
+        "service": "alley"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-82.9860181, 39.9454866],
+          [-82.985195, 39.9454497],
+          [-82.9843543, 39.9454145],
+          [-82.9835296, 39.9453687]
+        ]
+      },
+      "id": "way/390537140"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/390537141",
+        "highway": "service",
+        "lit": "no",
+        "service": "alley",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-82.9860752, 39.9447465],
+          [-82.9852819, 39.9447041],
+          [-82.9852452, 39.9447021],
+          [-82.9852069, 39.9447],
+          [-82.984413, 39.9446504],
+          [-82.9835835, 39.9445994]
+        ]
+      },
+      "id": "way/390537141"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/560093490",
+        "highway": "service",
+        "service": "alley",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-82.9857826, 39.9443306],
+          [-82.9857875, 39.9442683],
+          [-82.9858131, 39.9439239],
+          [-82.9858154, 39.9438932],
+          [-82.9858468, 39.9434708],
+          [-82.9858899, 39.9428916]
+        ]
+      },
+      "id": "way/560093490"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/565471427",
+        "highway": "residential",
+        "lanes": "2",
+        "lit": "yes",
+        "maxspeed": "25 mph",
+        "name": "East Columbus Street",
+        "name:etymology": "Christopher Columbus",
+        "name:etymology:wikidata": "Q7322",
+        "sidewalk": "both",
+        "surface": "paving_stones"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-82.985918, 39.946828],
+          [-82.985095, 39.9467885],
+          [-82.984254, 39.9467509],
+          [-82.9834319, 39.9467125],
+          [-82.9832729, 39.9467056],
+          [-82.9828839, 39.9466888],
+          [-82.982773, 39.946684]
+        ]
+      },
+      "id": "way/565471427"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/568499128",
+        "highway": "residential",
+        "lanes": "2",
+        "lit": "yes",
+        "maxspeed": "25 mph",
+        "name": "Stanley Avenue",
+        "sidewalk": "both",
+        "surface": "paving_stones"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-82.986047, 39.945104],
+          [-82.9852237, 39.9450664],
+          [-82.9843804, 39.9450285],
+          [-82.9835559, 39.9449931],
+          [-82.9830168, 39.9449691],
+          [-82.982901, 39.944969]
+        ]
+      },
+      "id": "way/568499128"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/864572968",
+        "highway": "service"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-82.9866874, 39.9478433],
+          [-82.9867113, 39.9476446],
+          [-82.9867274, 39.9473651]
+        ]
+      },
+      "id": "way/864572968"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/883196118",
+        "highway": "service"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-82.9891135, 39.9449671],
+          [-82.9886595, 39.9449466]
+        ]
+      },
+      "id": "way/883196118"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1324579183",
+        "highway": "residential",
+        "lanes": "2",
+        "lit": "yes",
+        "maxspeed": "25 mph",
+        "name": "East Columbus Street",
+        "name:etymology": "Christopher Columbus",
+        "name:etymology:wikidata": "Q7322",
+        "sidewalk": "left",
+        "surface": "paving_stones"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-82.9865206, 39.9467658],
+          [-82.985925, 39.946739]
+        ]
+      },
+      "id": "way/1324579183"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1324579184",
+        "highway": "residential",
+        "lanes": "2",
+        "lit": "yes",
+        "maxspeed": "25 mph",
+        "name": "East Columbus Street",
+        "name:etymology": "Christopher Columbus",
+        "name:etymology:wikidata": "Q7322",
+        "sidewalk": "no",
+        "surface": "paving_stones"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-82.9871536, 39.9467983],
+          [-82.9865206, 39.9467658]
+        ]
+      },
+      "id": "way/1324579184"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1324579252",
+        "highway": "residential",
+        "lanes": "2",
+        "lit": "yes",
+        "maxspeed": "25 mph",
+        "name": "Forest Street",
+        "name:etymology:wikidata": "Q4421",
+        "sidewalk": "no",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-82.989104, 39.947952],
+          [-82.9884338, 39.9479219]
+        ]
+      },
+      "id": "way/1324579252"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1324579299",
+        "highway": "residential",
+        "lanes": "1",
+        "lit": "yes",
+        "maxspeed": "25 mph",
+        "name": "Bruck Street",
+        "oneway": "yes",
+        "sidewalk": "both",
+        "surface": "paving_stones"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-82.987354, 39.944411],
+          [-82.9873907, 39.9439758],
+          [-82.9874304, 39.9435551],
+          [-82.9874819, 39.9429784],
+          [-82.9875384, 39.9423729],
+          [-82.987585, 39.9417513],
+          [-82.9876528, 39.941176],
+          [-82.9876822, 39.9406776],
+          [-82.9876869, 39.9405988]
+        ]
+      },
+      "id": "way/1324579299"
+    }
+  ]
+}
