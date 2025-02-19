@@ -18,16 +18,27 @@
         }
 
         html,
-        body,
-        #map {
+        body {
             height: 100%;
+            margin: 0;
+            padding: 0;
         }
     </style>
 </head>
 
 <body>
-    <div id="map"></div>
+    <div id="map" style="height: 100%;"></div>
+
     <script>
+
+        //Overpass query 
+        // [out:json][timeout:25];
+        // way["highway"]({{bbox}});
+        // out geom;
+
+
+        // Add A
+        const streetviewKey = 'IzaSyCY_952gGjBqylPvw16_rgi2pB2NI6aoPk';
         const map = new maplibregl.Map({
             container: 'map',
             style:
@@ -70,6 +81,7 @@
                     const intersections = [];
                     const bearingLines = [];
                     if (data.type === 'FeatureCollection' && Array.isArray(data.features)) {
+                        const colors = ["green", "blue", "orange", "purple"];
                         for (let i = 0; i < data.features.length; i++) {
                             for (let j = i + 1; j < data.features.length; j++) {
                                 const inter = turf.lineIntersect(data.features[i], data.features[j]);
@@ -83,7 +95,7 @@
                                         let bearing1, bearing2;
                                         const coords1 = data.features[i].geometry.coordinates;
                                         const coords2 = data.features[j].geometry.coordinates;
-                                        
+
                                         // For first feature: try next coordinate, if not available use previous
                                         if (snapped1.properties.index !== undefined) {
                                             if (coords1[snapped1.properties.index + 1]) {
@@ -98,7 +110,7 @@
                                                 );
                                             }
                                         }
-                                        
+
                                         // For second feature: try next coordinate, if not available use previous
                                         if (snapped2.properties.index !== undefined) {
                                             if (coords2[snapped2.properties.index + 1]) {
@@ -113,13 +125,18 @@
                                                 );
                                             }
                                         }
-                                        
+
                                         if (bearing1 !== undefined && bearing2 !== undefined) {
-                                            // Average bearing (modify if a different logic is needed)
                                             const avgBearing = (bearing1 + bearing2) / 2;
-                                            // Create a destination point (5 meters away)
-                                            const destination = turf.destination(point, 0.005, avgBearing, { units: 'kilometers' });
-                                            bearingLines.push(turf.lineString([point.geometry.coordinates, destination.geometry.coordinates]));
+                                            // Add four bearing lines at 0, 90, 180, 270 offsets with different colors:
+                                            [0, 90, 180, 270].forEach((offset, idx) => {
+                                                const adjustedBearing = avgBearing + offset;
+                                                const destination = turf.destination(point, 0.005, adjustedBearing, { units: 'kilometers' });
+                                                bearingLines.push(turf.lineString(
+                                                    [point.geometry.coordinates, destination.geometry.coordinates],
+                                                    { color: colors[idx] }
+                                                ));
+                                            });
                                         }
                                     }
                                 });
@@ -147,7 +164,7 @@
                         }
                     });
 
-                    // Add bearing lines to the map if any were found
+                    // Add bearing lines with data-driven colors
                     if (bearingLines.length) {
                         map.addSource('bearingLines', {
                             type: 'geojson',
@@ -162,14 +179,59 @@
                             source: 'bearingLines',
                             layout: {},
                             paint: {
-                                'line-color': 'green',
+                                'line-color': ['get', 'color'],
                                 'line-width': 2,
                                 'line-dasharray': [2, 1]
                             }
                         });
+
+                        // Change cursor to pointer on hover
+                        map.on('mouseenter', 'bearingLines', () => {
+                            map.getCanvas().style.cursor = 'pointer';
+                        });
+                        map.on('mouseleave', 'bearingLines', () => {
+                            map.getCanvas().style.cursor = '';
+                        });
+
+                        // Add click event listener on bearingLines layer
+                        map.on('click', 'bearingLines', function (e) {
+                            const feature = e.features && e.features[0];
+                            if (!feature) return;
+                            const coords = feature.geometry.coordinates;
+                            if (!coords || coords.length < 2) return;
+                            const start = coords[0];
+                            const end = coords[1];
+                            const heading = turf.bearing(turf.point(start), turf.point(end));
+                            const svUrl = 'https://maps.googleapis.com/maps/api/streetview?size=800x800' +
+                                '&location=' + start[1] + ',' + start[0] +
+                                '&heading=' + heading +
+                                '&pitch=-30&key=' + streetviewKey;
+
+                            navigator.clipboard.writeText(svUrl).then(function () {
+                                console.log('Street View URL copied to clipboard');
+                            }, function (err) {
+                                console.error('Could not copy text: ', err);
+                            });
+
+                            fetch(`https://api.allorigins.win/get?url=${encodeURIComponent(svUrl)}`)
+                                .then(response => response.json())
+                                .then(data => {
+                                    // Create a popup with the returned image data
+                                    new maplibregl.Popup()
+                                        .setLngLat(start)
+                                        .setHTML(`<img src="${data.contents}" alt="Street view" style="max-width:100%; height:auto;" />`)
+                                        .addTo(map);
+                                })
+                                .catch(error => console.error('Error:', error));
+                        });
                     }
                 });
         });
+
+
+
+
+
     </script>
 </body>
 
