@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Street View Screenshot Example</title>
+    <!-- Load html2canvas -->
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <!-- Load Google Maps JS API -->
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyALU--rsdhd4lwvHyolP0x1tg4Dqcj-PI8"></script>
+    <style>
+        #streetview {
+            width: 600px;
+            height: 400px;
+            position: relative;
+        }
+
+        #screenshot {
+            margin-top: 20px;
+            border: 1px solid #ccc;
+        }
+    </style>
+    <script>
+        // Patch HTMLCanvasElement.getContext to force preserveDrawingBuffer on WebGL contexts
+        HTMLCanvasElement.prototype.getContext = (function (origFn) {
+            return function (type, attributes) {
+                if (type === 'webgl' || type === 'experimental-webgl') {
+                    attributes = Object.assign({}, attributes, { preserveDrawingBuffer: true });
+                }
+                return origFn.call(this, type, attributes);
+            };
+        })(HTMLCanvasElement.prototype.getContext);
+
+        // Initialize the Street View panorama
+        function initStreetView() {
+            var panorama = new google.maps.StreetViewPanorama(
+                document.getElementById('streetview'),
+                {
+                    position: { lat: 37.869085, lng: -122.254775 },
+                    pov: { heading: 165, pitch: 0 },
+                    zoom: 1
+                }
+            );
+        }
+
+        // Take a screenshot of the street view container using html2canvas
+        function takeScreenshot() {
+            html2canvas(document.getElementById('streetview'), {
+                useCORS: true,
+                ignoreElements: function (el) {
+                    // Ignore unwanted elements (e.g. controls, copyright labels, pins)
+                    return el.classList.contains("gmnoprint") ||
+                        el.classList.contains("gm-style-cc") ||
+                        el.id === 'gmimap1' ||
+                        el.tagName === 'BUTTON' ||
+                        el.classList.contains("gm-iv-address") ||
+                        el.id === 'time-travel-container' ||
+                        el.getAttribute('src') === 'https://maps.gstatic.com/mapfiles/api-3/images/spotlight-poi3_hdpi.png' ||
+                        el.getAttribute('src') === 'https://maps.gstatic.com/mapfiles/api-3/images/spotlight-poi3.png' ||
+                        el.getAttribute('aria-label') === 'Open this area in Google Maps (opens a new window)';
+                }
+            }).then(function (canvas) {
+                // Display the captured screenshot on the page
+                var output = document.getElementById('screenshot');
+                output.innerHTML = ""; // clear previous screenshot if any
+                output.appendChild(canvas);
+            }).catch(function (err) {
+                console.error("Screenshot error:", err);
+            });
+        }
+    </script>
+</head>
+
+<body onload="initStreetView();">
+    <h1>Street View Screenshot Example</h1>
+    <div id="streetview"></div>
+    <button onclick="takeScreenshot();">Take Screenshot</button>
+    <div id="screenshot"></div>
+</body>
+
+</html>

@@ -11,8 +11,6 @@
     <script src='https://unpkg.com/maplibre-gl@5.1.0/dist/maplibre-gl.js'></script>
     <!-- Added Turf.js -->
     <script src="https://unpkg.com/@turf/turf/turf.min.js"></script>
-    <!-- Add Google Maps JavaScript API -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyALU--rsdhd4lwvHyolP0x1tg4Dqcj-PI8"></script>
     <style>
         body {
             margin: 0;
@@ -28,31 +26,102 @@
 
         .container {
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             height: 100%;
+            border: #ccc solid 1px;
+        }
+
+        #map {
+            height: 100%;
+            width: 50%;
         }
 
         #street {
             height: 50%;
             width: 100%;
+            position: relative;
+        }
+
+        #screenshot-btn {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            z-index: 1000;
+            padding: 10px;
+            background: white;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .centered {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100vw;
+            overflow-x: hidden;
+        }
+
+        #streetview {
+            height: 100vh;
+            width: 50%;
+        }
+
+        #btn-screenshot {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .fixed {
+            position: fixed;
+            top: 0;
+            right: 0;
+            z-index: 1000;
         }
     </style>
 </head>
 
 <body>
+    <script>
+        // Hack to set preserveDrawingBuffer=true on the WebGL context
+        // This is necessary to take a screenshot of streetview with html2canvas 
+        // https://stackoverflow.com/questions/26783586/canvas-todataurl-returns-blank-image
+        HTMLCanvasElement.prototype.getContext = function (origFn) {
+            return function (type, attributes) {
+                if (type === 'webgl') {
+                    attributes = Object.assign({}, attributes, {
+                        preserveDrawingBuffer: true,
+                    });
+                }
+                return origFn.call(this, type, attributes);
+            };
+        }(HTMLCanvasElement.prototype.getContext);
+    </script>
 
-    <div class="container">
-        <div id="map" style="height: 50%;"></div>
-        <div id="street"></div>
+    <div class="fixed">
+        <button id="btn-screenshot" type="button" class="btn btn-primary btn-screenshot"
+            onclick="screenshotStreetview(event);">
+            Screenshot
+        </button>
     </div>
 
+    <div class="container">
+        <div id="map"></div>
+        <div id="streetview"></div>
+    </div>
+
+
+    <div id="test-screenshot-container"></div>
+
     <script>
+
+        let panorama;
 
         //Overpass query 
         // [out:json][timeout:25];
         // way["highway"]({{bbox}});
         // out geom;
-
 
         // Add A
         const map = new maplibregl.Map({
@@ -63,15 +132,6 @@
             zoom: 17
         });
 
-        // Initialize Street View panorama (add this after map initialization)
-        const panorama = new google.maps.StreetViewPanorama(
-            document.getElementById('street'),
-            {
-                position: { lat: 39.943479656140994, lng: -82.98674224602951 },
-                pov: { heading: 0, pitch: 0 },
-                zoom: 1
-            }
-        );
 
         map.on('load', () => {
 
@@ -241,7 +301,96 @@
         });
 
 
+        async function initMap() {
+            const { StreetViewPanorama } = await google.maps.importLibrary("streetView");
+            const coordinates = { lat: 45.5147734, lng: -73.5851074 };
+            // Create a static panorama view with preset POV values
+            panorama = new StreetViewPanorama(
+                document.getElementById('streetview'),
+                {
+                    position: coordinates,
+                    pov: { heading: 0, pitch: 0 },
+                    zoom: 0,
+                }
+            )
+        }
+
+        //wait for the google to init the map
+        setTimeout(() => {
+            initMap();
+        }, 1000);
+
+
+        async function screenshot(element_id) {
+            return html2canvas(
+                document.getElementById(element_id), {
+                useCORS: true,
+                logging: false, // set true for debug,
+                ignoreElements: el =>
+                    // The following hides unwanted controls, copyrights, pins etc. on the maps and streetview canvases
+                    el.classList.contains("gmnoprint") || el.classList.contains("gm-style-cc")
+                    || el.id === 'gmimap1' || el.tagName === 'BUTTON' || el.classList.contains("gm-iv-address")
+                    || el.id === 'time-travel-container' // If you followed my previous tutorial
+                    || el.getAttribute('src') === 'https://maps.gstatic.com/mapfiles/api-3/images/spotlight-poi3_hdpi.png' // pins
+                    || el.getAttribute('src') === 'https://maps.gstatic.com/mapfiles/api-3/images/spotlight-poi3.png' // pins
+                    || el.getAttribute('aria-label') === 'Open this area in Google Maps (opens a new window)'
+            }
+            ).then(canvas => {
+                // Adds the screenshots to the page
+                document.body.style.overflowY = 'scroll';
+                document.body.style.height = '100%';
+                document.getElementById('test-screenshot-container').prepend(canvas);
+
+                // Convert to data URL for saving or uploading
+                const dataURL = canvas.toDataURL("image/jpeg");
+
+                // Download the screenshot locally
+                var a = document.createElement('a');
+                a.href = dataURL;
+                a.download = `screenshot_${Date.now()}.jpg`;
+                a.click();
+
+                return dataURL;
+            })
+        }
+
+
+        async function screenshotStreetview(event) {
+            event.preventDefault();
+
+            const postData = {
+                img: await screenshot('streetview'),
+            }
+
+            // Change this to upload the image to your server
+            const uploadURL = "/test"
+            fetch(uploadURL, {
+                method: "POST",
+                mode: "same-origin",
+                cache: "no-cache",
+                credentials: "same-origin",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(postData),
+            }).catch(() => {
+                console.debug('Set a server URL to upload the image')
+            });
+        }
+
+
     </script>
+    <!-- Add html2canvas library -->
+
+    <script>
+        // Initialize Google Maps
+        (g => { var h, a, k, p = "The Google Maps JavaScript API", c = "google", l = "importLibrary", q = "__ib__", m = document, b = window; b = b[c] || (b[c] = {}); var d = b.maps || (b.maps = {}), r = new Set, e = new URLSearchParams, u = () => h || (h = new Promise(async (f, n) => { await (a = m.createElement("script")); e.set("libraries", [...r] + ""); for (k in g) e.set(k.replace(/[A-Z]/g, t => "_" + t[0].toLowerCase()), g[k]); e.set("callback", c + ".maps." + q); a.src = `https://maps.${c}apis.com/maps/api/js?` + e; d[q] = f; a.onerror = () => h = n(Error(p + " could not load.")); a.nonce = m.querySelector("script[nonce]")?.nonce || ""; m.head.append(a) })); d[l] ? console.warn(p + " only loads once. Ignoring:", g) : d[l] = (f, ...n) => r.add(f) && u().then(() => d[l](f, ...n)) })({
+            key: "AIzaSyALU--rsdhd4lwvHyolP0x1tg4Dqcj-PI8",
+            v: "3.53",
+        });
+    </script>
+    <script src="./scripts/html2canvas.min.js"></script>
+
 </body>
 
 </html>
