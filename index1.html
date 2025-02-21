@@ -11,6 +11,8 @@
     <script src='https://unpkg.com/maplibre-gl@5.1.0/dist/maplibre-gl.js'></script>
     <!-- Added Turf.js -->
     <script src="https://unpkg.com/@turf/turf/turf.min.js"></script>
+    <!-- Add Google Maps JavaScript API -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyALU--rsdhd4lwvHyolP0x1tg4Dqcj-PI8"></script>
     <style>
         body {
             margin: 0;
@@ -23,11 +25,26 @@
             margin: 0;
             padding: 0;
         }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        #street {
+            height: 50%;
+            width: 100%;
+        }
     </style>
 </head>
 
 <body>
-    <div id="map" style="height: 100%;"></div>
+
+    <div class="container">
+        <div id="map" style="height: 50%;"></div>
+        <div id="street"></div>
+    </div>
 
     <script>
 
@@ -38,7 +55,6 @@
 
 
         // Add A
-        const streetviewKey = 'IzaSyCY_952gGjBqylPvw16_rgi2pB2NI6aoPk';
         const map = new maplibregl.Map({
             container: 'map',
             style:
@@ -46,6 +62,16 @@
             center: { lng: -82.98674224602951, lat: 39.943479656140994 },
             zoom: 17
         });
+
+        // Initialize Street View panorama (add this after map initialization)
+        const panorama = new google.maps.StreetViewPanorama(
+            document.getElementById('street'),
+            {
+                position: { lat: 39.943479656140994, lng: -82.98674224602951 },
+                pov: { heading: 0, pitch: 0 },
+                zoom: 1
+            }
+        );
 
         map.on('load', () => {
 
@@ -202,27 +228,13 @@
                             const start = coords[0];
                             const end = coords[1];
                             const heading = turf.bearing(turf.point(start), turf.point(end));
-                            const svUrl = 'https://maps.googleapis.com/maps/api/streetview?size=800x800' +
-                                '&location=' + start[1] + ',' + start[0] +
-                                '&heading=' + heading +
-                                '&pitch=-30&key=' + streetviewKey;
 
-                            navigator.clipboard.writeText(svUrl).then(function () {
-                                console.log('Street View URL copied to clipboard');
-                            }, function (err) {
-                                console.error('Could not copy text: ', err);
+                            // Update Street View position and POV
+                            panorama.setPosition({ lat: start[1], lng: start[0] });
+                            panorama.setPov({
+                                heading: heading,
+                                pitch: -30
                             });
-
-                            fetch(`https://api.allorigins.win/get?url=${encodeURIComponent(svUrl)}`)
-                                .then(response => response.json())
-                                .then(data => {
-                                    // Create a popup with the returned image data
-                                    new maplibregl.Popup()
-                                        .setLngLat(start)
-                                        .setHTML(`<img src="${data.contents}" alt="Street view" style="max-width:100%; height:auto;" />`)
-                                        .addTo(map);
-                                })
-                                .catch(error => console.error('Error:', error));
                         });
                     }
                 });
