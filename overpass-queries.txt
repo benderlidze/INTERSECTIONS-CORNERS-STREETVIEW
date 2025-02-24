@@ -1,0 +1,34 @@
+[out:json];
+area(559723213);  // German Village area ID
+(way["highway"](area););  // Query for all roads ("highway" tag) within the area
+out body;
+>;
+out skel qt;
+
+
+[out:json];
+way(559723213);
+out body;
+>;
+out skel qt;
+
+
+[out:json];
+
+// Village boundary
+way(559723213)->.village_boundary;
+.village_boundary out geom;
+
+// Get nodes of the boundary
+node(w.village_boundary)->.boundary_nodes;
+
+// Get all roads within the village and 100m around any boundary node
+(
+  way["highway"](area.village_boundary);
+  way["highway"](around.boundary_nodes:100);
+);
+
+// Output
+out body;
+>;
+out skel qt;

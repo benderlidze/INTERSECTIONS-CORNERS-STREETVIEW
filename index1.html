@@ -117,7 +117,8 @@
     <script>
 
         let panorama;
-
+        const button = document.getElementById('btn-screenshot');
+        const appData = {}
         //Overpass query 
         // [out:json][timeout:25];
         // way["highway"]({{bbox}});
@@ -132,8 +133,26 @@
             zoom: 17
         });
 
+        // Function to get the date of the Street View image
+        async function getStreetViewImageDate(lat, lng) {
+            const streetViewService = new google.maps.StreetViewService();
+            const location = new google.maps.LatLng(lat, lng);
+
+            return new Promise((resolve, reject) => {
+                streetViewService.getPanorama({ location, radius: 50 }, (data, status) => {
+                    if (status === google.maps.StreetViewStatus.OK) {
+                        resolve(data.imageDate); // Return the image date
+                    } else {
+                        reject('Street View data not found for this location');
+                    }
+                });
+            });
+        }
+
 
         map.on('load', () => {
+
+
 
             map.addSource('route', {
                 'type': 'geojson',
@@ -157,7 +176,25 @@
                 }
             });
 
-            fetch("export.geojson")
+            // Add German Village polygon source
+            map.addSource('german-village', {
+                'type': 'geojson',
+                'data': 'german village.geojson'
+            });
+
+            // Add fill layer for German Village
+            map.addLayer({
+                'id': 'german-village-fill',
+                'type': 'fill',
+                'source': 'german-village',
+                'layout': {},
+                'paint': {
+                    'fill-color': 'blue',
+                    'fill-opacity': 0.5
+                }
+            });
+
+            fetch("export (2).geojson")
                 .then(response => response.json())
                 .then(data => {
                     console.log('data', data);
@@ -173,6 +210,7 @@
                                 const inter = turf.lineIntersect(data.features[i], data.features[j]);
                                 inter.features.forEach(point => {
                                     // Only process if geometry coordinates exist and are non-empty
+
                                     if (point.geometry && Array.isArray(point.geometry.coordinates) && point.geometry.coordinates.length) {
                                         intersections.push(point);
                                         // Get bearing from each line using the nearest segment
@@ -313,6 +351,15 @@
                     zoom: 0,
                 }
             )
+
+            panorama.addListener('position_changed', async () => {
+                const position = panorama.getPosition();
+                const lat = position.lat();
+                const lng = position.lng();
+                const date = await getStreetViewImageDate(lat, lng);
+                button.innerText = `Screenshot  ${date}`;
+                appData.date = date;
+            });
         }
 
         //wait for the google to init the map
@@ -347,7 +394,7 @@
                 // Download the screenshot locally
                 var a = document.createElement('a');
                 a.href = dataURL;
-                a.download = `screenshot_${Date.now()}.jpg`;
+                a.download = `screenshot_${appData.date}.jpg`;
                 a.click();
 
                 return dataURL;
@@ -362,20 +409,6 @@
                 img: await screenshot('streetview'),
             }
 
-            // Change this to upload the image to your server
-            const uploadURL = "/test"
-            fetch(uploadURL, {
-                method: "POST",
-                mode: "same-origin",
-                cache: "no-cache",
-                credentials: "same-origin",
-                headers: {
-                    "Content-Type": "application/json",
-                },
-                body: JSON.stringify(postData),
-            }).catch(() => {
-                console.debug('Set a server URL to upload the image')
-            });
         }
 
 
