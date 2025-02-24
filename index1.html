@@ -256,7 +256,7 @@
                                                 const destination = turf.destination(point, 0.005, adjustedBearing, { units: 'kilometers' });
                                                 bearingLines.push(turf.lineString(
                                                     [point.geometry.coordinates, destination.geometry.coordinates],
-                                                    { color: colors[idx] }
+                                                    { color: colors[idx], intersectionId: point.properties.id }
                                                 ));
                                             });
                                         }
@@ -265,6 +265,11 @@
                             }
                         }
                     }
+                    // Add unique id to each intersection feature
+                    intersections.forEach((feature, idx) => {
+                        feature.properties = feature.properties || {};
+                        feature.properties.id = 'intersection-' + idx;
+                    });
                     console.log('intersections', intersections);
                     console.log('bearingLines', bearingLines);
 
@@ -281,9 +286,32 @@
                         type: 'circle',
                         source: 'intersectionPoints',
                         paint: {
-                            'circle-radius': 5,
+                            'circle-radius': 10, // increased from 5
                             'circle-color': 'red'
                         }
+                    });
+                    // Add a new layer to display the intersection ids as text on the map
+                    map.addLayer({
+                        id: 'intersectionLabels',
+                        type: 'symbol',
+                        source: 'intersectionPoints',
+                        layout: {
+                            'text-field': ['get', 'id'],
+                            'text-offset': [0, 0], // center the text over the circle
+                            'text-size': 14,      // optionally increased for better visibility
+                            'text-anchor': 'center'
+                        },
+                        paint: {
+                            'text-color': 'black'
+                        }
+                    });
+
+                    // After adding the intersectionLabels layer, add a click handler for intersectionPoints:
+                    map.on('click', 'intersectionPoints', function (e) {
+                        const feature = e.features && e.features[0];
+                        if (!feature) return;
+                        appData.intersectionId = feature.properties.id || '';
+                        console.log("Intersection clicked:", appData.intersectionId);
                     });
 
                     // Add bearing lines with data-driven colors
@@ -319,6 +347,7 @@
                         map.on('click', 'bearingLines', function (e) {
                             const feature = e.features && e.features[0];
                             if (!feature) return;
+                            appData.intersectionId = feature.properties.intersectionId || '';
                             const coords = feature.geometry.coordinates;
                             if (!coords || coords.length < 2) return;
                             const start = coords[0];
@@ -429,8 +458,7 @@
                 // Convert to data URL for saving or uploading
                 const dataURL = canvas.toDataURL("image/jpeg");
 
-
-                const fileName = `${appData.fullAddress}~${appData.date}~${appData.direction}~${appData.coords}`;
+                const fileName = `${appData.fullAddress}~${appData.date}~${appData.direction}~${appData.coords}~id-${appData.intersectionId || '??'}`;
                 console.log('fileName', fileName);
                 // Download the screenshot locally
                 var a = document.createElement('a');
