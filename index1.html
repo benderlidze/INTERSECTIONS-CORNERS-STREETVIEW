@@ -210,8 +210,12 @@
                                     // Only process if geometry coordinates exist and are non-empty
 
                                     if (point.geometry && Array.isArray(point.geometry.coordinates) && point.geometry.coordinates.length) {
+                                        // Add ID to the point first
+                                        point.properties = point.properties || {};
+                                        point.properties.id = '' + intersections.length;
                                         intersections.push(point);
-                                        // Get bearing from each line using the nearest segment
+                                        
+                                        // Rest of bearing calculation code...
                                         const snapped1 = turf.nearestPointOnLine(data.features[i], point);
                                         const snapped2 = turf.nearestPointOnLine(data.features[j], point);
                                         let bearing1, bearing2;
@@ -256,7 +260,10 @@
                                                 const destination = turf.destination(point, 0.005, adjustedBearing, { units: 'kilometers' });
                                                 bearingLines.push(turf.lineString(
                                                     [point.geometry.coordinates, destination.geometry.coordinates],
-                                                    { color: colors[idx], intersectionId: point.properties.id }
+                                                    {
+                                                        color: colors[idx] || 'purple',
+                                                        intersectionId: point.properties.id || 'unknown'
+                                                    }
                                                 ));
                                             });
                                         }
@@ -346,6 +353,8 @@
                         // Add click event listener on bearingLines layer
                         map.on('click', 'bearingLines', function (e) {
                             const feature = e.features && e.features[0];
+                            console.log('feature', feature);
+
                             if (!feature) return;
                             appData.intersectionId = feature.properties.intersectionId || '';
                             const coords = feature.geometry.coordinates;
