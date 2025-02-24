@@ -152,8 +152,6 @@
 
         map.on('load', () => {
 
-
-
             map.addSource('route', {
                 'type': 'geojson',
                 'data': {
@@ -190,7 +188,7 @@
                 'layout': {},
                 'paint': {
                     'fill-color': 'blue',
-                    'fill-opacity': 0.5
+                    'fill-opacity': 0.1
                 }
             });
 
@@ -338,6 +336,9 @@
                 });
         });
 
+        const marker = new maplibregl.Marker()
+            .setLngLat([-82.98674224602951, 39.943479656140994])
+            .addTo(map);
 
         async function initMap() {
             const { StreetViewPanorama } = await google.maps.importLibrary("streetView");
@@ -352,13 +353,50 @@
                 }
             )
 
+            panorama.addListener('pov_changed', () => {
+
+                const heading = panorama.getPov().heading;
+                const directions = ['N', 'NE', 'E', 'SE', 'S', 'SW', 'W', 'NW'];
+                const index = Math.round(((heading % 360) + 360) % 360 / 45);
+                const direction = directions[index % 8];
+                appData.direction = direction;
+
+                console.log('direction', direction);
+            });
+
             panorama.addListener('position_changed', async () => {
                 const position = panorama.getPosition();
                 const lat = position.lat();
                 const lng = position.lng();
                 const date = await getStreetViewImageDate(lat, lng);
-                button.innerText = `Screenshot  ${date}`;
-                appData.date = date;
+
+                // Get detailed address using reverse geocoding
+                const geocoder = new google.maps.Geocoder();
+                const latlng = { lat: lat, lng: lng };
+
+                geocoder.geocode({ location: latlng }, (results, status) => {
+                    if (status === 'OK' && results[0]) {
+
+                        console.log('results', results);
+                        const addressComponents = results[0].address_components;
+
+                        // Extract address components
+                        const streetNumber = addressComponents.find(c => c.types.includes('street_number'))?.long_name || '';
+                        const streetName = addressComponents.find(c => c.types.includes('route'))?.long_name || '';
+
+                        // Store in appData
+                        appData.streetNumber = streetNumber;
+                        appData.streetName = streetName;
+                        appData.fullAddress = results[0].formatted_address;
+                        appData.coords = `${lat.toFixed(6)},${lng.toFixed(6)}`;
+                        appData.date = date;
+
+                        // Update button text with more detailed information
+                        button.innerText = `${streetNumber} ${streetName} - ${date}`;
+                    }
+                });
+
+                marker.setLngLat([lng, lat]);
             });
         }
 
@@ -391,10 +429,13 @@
                 // Convert to data URL for saving or uploading
                 const dataURL = canvas.toDataURL("image/jpeg");
 
+
+                const fileName = `${appData.fullAddress}__${appData.date}__${appData.direction}__${appData.coords}`.replace(/\s+/g, '_');
+                console.log('fileName', fileName);
                 // Download the screenshot locally
                 var a = document.createElement('a');
                 a.href = dataURL;
-                a.download = `screenshot_${appData.date}.jpg`;
+                a.download = `${fileName}.jpg`;
                 a.click();
 
                 return dataURL;
