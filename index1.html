@@ -116,6 +116,11 @@
 
     <script>
 
+        const doneIntersections = [
+            "131",
+            133
+        ]
+
         let panorama;
         const button = document.getElementById('btn-screenshot');
         const appData = {}
@@ -214,7 +219,7 @@
                                         point.properties = point.properties || {};
                                         point.properties.id = '' + intersections.length;
                                         intersections.push(point);
-                                        
+
                                         // Rest of bearing calculation code...
                                         const snapped1 = turf.nearestPointOnLine(data.features[i], point);
                                         const snapped2 = turf.nearestPointOnLine(data.features[j], point);
@@ -272,11 +277,6 @@
                             }
                         }
                     }
-                    // Add unique id to each intersection feature
-                    intersections.forEach((feature, idx) => {
-                        feature.properties = feature.properties || {};
-                        feature.properties.id = 'intersection-' + idx;
-                    });
                     console.log('intersections', intersections);
                     console.log('bearingLines', bearingLines);
 
@@ -293,8 +293,13 @@
                         type: 'circle',
                         source: 'intersectionPoints',
                         paint: {
-                            'circle-radius': 10, // increased from 5
-                            'circle-color': 'red'
+                            'circle-radius': 15,
+                            'circle-color': [
+                                'case',
+                                ['in', ['get', 'id'], ['literal', doneIntersections]],
+                                'white',
+                                'red'
+                            ]
                         }
                     });
                     // Add a new layer to display the intersection ids as text on the map
@@ -472,6 +477,7 @@
                 // Download the screenshot locally
                 var a = document.createElement('a');
                 a.href = dataURL;
+
                 a.download = `${fileName}.jpg`;
                 a.click();
 
