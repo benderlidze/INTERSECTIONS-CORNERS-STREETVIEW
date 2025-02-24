@@ -192,7 +192,7 @@
                 }
             });
 
-            fetch("export (2).geojson")
+            fetch("map.geojson")
                 .then(response => response.json())
                 .then(data => {
                     console.log('data', data);
@@ -430,7 +430,7 @@
                 const dataURL = canvas.toDataURL("image/jpeg");
 
 
-                const fileName = `${appData.fullAddress}__${appData.date}__${appData.direction}__${appData.coords}`.replace(/\s+/g, '_');
+                const fileName = `${appData.fullAddress}~${appData.date}~${appData.direction}~${appData.coords}`;
                 console.log('fileName', fileName);
                 // Download the screenshot locally
                 var a = document.createElement('a');
