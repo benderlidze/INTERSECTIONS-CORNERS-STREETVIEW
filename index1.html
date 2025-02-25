@@ -117,8 +117,8 @@
     <script>
 
         const doneIntersections = [
-            "131",
-            133
+            62, 281, 280, 237, 147, 166, 197, 174
+
         ]
 
         let panorama;
@@ -129,7 +129,6 @@
         // way["highway"]({{bbox}});
         // out geom;
 
-        // Add A
         const map = new maplibregl.Map({
             container: 'map',
             style:
@@ -215,72 +214,82 @@
                                     // Only process if geometry coordinates exist and are non-empty
 
                                     if (point.geometry && Array.isArray(point.geometry.coordinates) && point.geometry.coordinates.length) {
-                                        // Add ID to the point first
-                                        point.properties = point.properties || {};
-                                        point.properties.id = '' + intersections.length;
-                                        intersections.push(point);
+                                        // Check if there's already a nearby intersection before adding
+                                        const tooClose = intersections.some(existingPoint => {
+                                            const distance = turf.distance(
+                                                turf.point(point.geometry.coordinates),
+                                                turf.point(existingPoint.geometry.coordinates),
+                                                { units: 'meters' }
+                                            );
+                                            return distance < 2; // 2 meters threshold
+                                        });
 
-                                        // Rest of bearing calculation code...
-                                        const snapped1 = turf.nearestPointOnLine(data.features[i], point);
-                                        const snapped2 = turf.nearestPointOnLine(data.features[j], point);
-                                        let bearing1, bearing2;
-                                        const coords1 = data.features[i].geometry.coordinates;
-                                        const coords2 = data.features[j].geometry.coordinates;
+                                        if (!tooClose) {
+                                            // Add ID to the point first
+                                            point.properties = point.properties || {};
+                                            point.properties.id = '' + intersections.length;
+                                            intersections.push(point);
 
-                                        // For first feature: try next coordinate, if not available use previous
-                                        if (snapped1.properties.index !== undefined) {
-                                            if (coords1[snapped1.properties.index + 1]) {
-                                                bearing1 = turf.bearing(
-                                                    turf.point(coords1[snapped1.properties.index]),
-                                                    turf.point(coords1[snapped1.properties.index + 1])
-                                                );
-                                            } else if (snapped1.properties.index > 0) {
-                                                bearing1 = turf.bearing(
-                                                    turf.point(coords1[snapped1.properties.index - 1]),
-                                                    turf.point(coords1[snapped1.properties.index])
-                                                );
+                                            // Rest of bearing calculation code...
+                                            const snapped1 = turf.nearestPointOnLine(data.features[i], point);
+                                            const snapped2 = turf.nearestPointOnLine(data.features[j], point);
+                                            let bearing1, bearing2;
+                                            const coords1 = data.features[i].geometry.coordinates;
+                                            const coords2 = data.features[j].geometry.coordinates;
+
+                                            // For first feature: try next coordinate, if not available use previous
+                                            if (snapped1.properties.index !== undefined) {
+                                                if (coords1[snapped1.properties.index + 1]) {
+                                                    bearing1 = turf.bearing(
+                                                        turf.point(coords1[snapped1.properties.index]),
+                                                        turf.point(coords1[snapped1.properties.index + 1])
+                                                    );
+                                                } else if (snapped1.properties.index > 0) {
+                                                    bearing1 = turf.bearing(
+                                                        turf.point(coords1[snapped1.properties.index - 1]),
+                                                        turf.point(coords1[snapped1.properties.index])
+                                                    );
+                                                }
                                             }
-                                        }
 
-                                        // For second feature: try next coordinate, if not available use previous
-                                        if (snapped2.properties.index !== undefined) {
-                                            if (coords2[snapped2.properties.index + 1]) {
-                                                bearing2 = turf.bearing(
-                                                    turf.point(coords2[snapped2.properties.index]),
-                                                    turf.point(coords2[snapped2.properties.index + 1])
-                                                );
-                                            } else if (snapped2.properties.index > 0) {
-                                                bearing2 = turf.bearing(
-                                                    turf.point(coords2[snapped2.properties.index - 1]),
-                                                    turf.point(coords2[snapped2.properties.index])
-                                                );
+                                            // For second feature: try next coordinate, if not available use previous
+                                            if (snapped2.properties.index !== undefined) {
+                                                if (coords2[snapped2.properties.index + 1]) {
+                                                    bearing2 = turf.bearing(
+                                                        turf.point(coords2[snapped2.properties.index]),
+                                                        turf.point(coords2[snapped2.properties.index + 1])
+                                                    );
+                                                } else if (snapped2.properties.index > 0) {
+                                                    bearing2 = turf.bearing(
+                                                        turf.point(coords2[snapped2.properties.index - 1]),
+                                                        turf.point(coords2[snapped2.properties.index])
+                                                    );
+                                                }
                                             }
-                                        }
 
-                                        if (bearing1 !== undefined && bearing2 !== undefined) {
-                                            const avgBearing = (bearing1 + bearing2) / 2;
-                                            // Add four bearing lines at 0, 90, 180, 270 offsets with different colors:
-                                            [0, 90, 180, 270].forEach((offset, idx) => {
-                                                const adjustedBearing = avgBearing + offset;
-                                                const destination = turf.destination(point, 0.005, adjustedBearing, { units: 'kilometers' });
-                                                bearingLines.push(turf.lineString(
-                                                    [point.geometry.coordinates, destination.geometry.coordinates],
-                                                    {
-                                                        color: colors[idx] || 'purple',
-                                                        intersectionId: point.properties.id || 'unknown'
-                                                    }
-                                                ));
-                                            });
+                                            if (bearing1 !== undefined && bearing2 !== undefined) {
+                                                const avgBearing = (bearing1 + bearing2) / 2;
+                                                // Add four bearing lines at 0, 90, 180, 270 offsets with different colors:
+                                                [0, 90, 180, 270].forEach((offset, idx) => {
+                                                    const adjustedBearing = avgBearing + offset;
+                                                    const destination = turf.destination(point, 0.005, adjustedBearing, { units: 'kilometers' });
+                                                    bearingLines.push(turf.lineString(
+                                                        [point.geometry.coordinates, destination.geometry.coordinates],
+                                                        {
+                                                            color: colors[idx] || 'purple',
+                                                            intersectionId: point.properties.id || 'unknown'
+                                                        }
+                                                    ));
+                                                });
+                                            }
                                         }
                                     }
                                 });
                             }
                         }
                     }
-                    console.log('intersections', intersections);
-                    console.log('bearingLines', bearingLines);
 
-                    // Remove markers and add intersections as red dots in a new layer
+                    // Use intersections directly since filtering is done during creation
                     map.addSource('intersectionPoints', {
                         type: 'geojson',
                         data: {
@@ -288,6 +297,10 @@
                             features: intersections
                         }
                     });
+                    console.log('intersections', intersections);
+                    console.log('bearingLines', bearingLines);
+
+
                     map.addLayer({
                         id: 'intersectionPoints',
                         type: 'circle',
@@ -296,7 +309,10 @@
                             'circle-radius': 15,
                             'circle-color': [
                                 'case',
-                                ['in', ['get', 'id'], ['literal', doneIntersections]],
+                                ['in',
+                                    ['to-number', ['get', 'id']],  // Convert id to number before comparison
+                                    ['literal', doneIntersections]
+                                ],
                                 'white',
                                 'red'
                             ]
@@ -309,12 +325,13 @@
                         source: 'intersectionPoints',
                         layout: {
                             'text-field': ['get', 'id'],
-                            'text-offset': [0, 0], // center the text over the circle
-                            'text-size': 14,      // optionally increased for better visibility
+                            'text-offset': [2, 0], // center the text over the circle
+                            'text-size': 18,      // optionally increased for better visibility
                             'text-anchor': 'center'
                         },
                         paint: {
                             'text-color': 'black'
+
                         }
                     });
 
