@@ -79,6 +79,17 @@
             right: 0;
             z-index: 1000;
         }
+
+        #street {
+            position: absolute;
+            top: 10px;
+            right: 100px;
+            background-color: white;
+            padding: 10px;
+            z-index: 100;
+            width: fit-content;
+            height: fit-content;
+        }
     </style>
 </head>
 
@@ -99,6 +110,8 @@
         }(HTMLCanvasElement.prototype.getContext);
     </script>
 
+    <div id="street"></div>
+
     <div class="fixed">
         <button id="btn-screenshot" type="button" class="btn btn-primary btn-screenshot"
             onclick="screenshotStreetview(event);">
@@ -115,11 +128,12 @@
     <div id="test-screenshot-container"></div>
 
     <script>
+        const streetDiv = document.getElementById('street');
 
         const doneIntersections = [
-            62, 281, 280, 237, 147, 166, 197, 174,
-            58, 187, 185, 144, 163, 186, 184, 198, 176,
-            61, 236, 253, 146, 165, 254, 252, 196, 191, 172
+            62, 281, 237, 147, 166, 280,
+            58, 187, 185, 144, 163, 186,
+            61
         ]
 
         let panorama;
@@ -132,11 +146,30 @@
 
         const map = new maplibregl.Map({
             container: 'map',
-            style:
-                'https://api.maptiler.com/maps/streets/style.json?key=get_your_own_OpIi9ZULNHzrESv6T2vL',
+            style: 'https://api.maptiler.com/maps/streets/style.json?key=get_your_own_OpIi9ZULNHzrESv6T2vL',
+            // style: {
+            //     version: 8,
+            //     sources: {
+            //         google: {
+            //             type: 'raster',
+            //             tiles: [
+            //                 `https://mts1.google.com/vt/lyrs=m&x={x}&y={y}&z={z}&key=`
+            //             ],
+            //             tileSize: 256
+            //         }
+            //     },
+            //     layers: [
+            //         {
+            //             id: 'google-tiles',
+            //             type: 'raster',
+            //             source: 'google'
+            //         }
+            //     ]
+            // },
             center: { lng: -82.98674224602951, lat: 39.943479656140994 },
             zoom: 17
         });
+
 
         // Function to get the date of the Street View image
         async function getStreetViewImageDate(lat, lng) {
@@ -392,7 +425,42 @@
                                 heading: heading,
                                 pitch: -30
                             });
+
+
                         });
+
+                        // map.on('click', (e) => {
+                        //     const start = e.lngLat.toArray();
+                        //     // Geocode the clicked coordinates
+                        //     const geocoder = new google.maps.Geocoder();
+                        //     const latlng = { lat: start[1], lng: start[0] };
+                        //     geocoder.geocode({ location: latlng }, (results, status) => {
+                        //         if (status === 'OK' && results[0]) {
+                        //             const addressComponents = results[0].address_components;
+                        //             // Extract address components
+                        //             const streetNumber = addressComponents.find(c => c.types.includes('street_number'))?.long_name || '';
+                        //             const streetName = addressComponents.find(c => c.types.includes('route'))?.long_name || '';
+                        //             // Store in appData
+                        //             appData.streetNumber = streetNumber;
+                        //             appData.streetName = streetName;
+                        //             appData.fullAddress = results[0].formatted_address;
+                        //             appData.coords = `${start[1].toFixed(6)},${start[0].toFixed(6)}`;
+
+                        //             streetDiv.innerHTML = `
+                        //                 <p>Intersection ID: ${appData.intersectionId}</p>
+                        //                 <p>Street: ${streetNumber} ${streetName}</p>
+                        //                 <p>Address: ${results[0].formatted_address}</p>
+                        //             `;
+
+                        //             // Update Street View position and POV
+                        //             panorama.setPosition({ lat: start[1], lng: start[0] });
+                        //             panorama.setPov({
+                        //                 heading: heading,
+                        //                 pitch: -30
+                        //             });
+                        //         }
+                        //     });
+                        // })
                     }
                 });
         });
@@ -414,16 +482,84 @@
                 }
             )
 
-            panorama.addListener('pov_changed', () => {
 
-                const heading = panorama.getPov().heading;
-                const directions = ['N', 'NE', 'E', 'SE', 'S', 'SW', 'W', 'NW'];
-                const index = Math.round(((heading % 360) + 360) % 360 / 45);
-                const direction = directions[index % 8];
-                appData.direction = direction;
+            function getAddressCameraIsLookingAt(panorama) {
+                // Get the current position and point of view
+                const position = panorama.getPosition();
+                const pov = panorama.getPov();
 
-                console.log('direction', direction);
-            });
+                // Calculate a point in the direction the camera is facing
+                // (approximately 10 meters in the heading direction)
+                const heading = pov.heading;
+                const lat = position.lat();
+                const lng = position.lng();
+
+                // Use spherical geometry to calculate the target point
+                // This is a simplified example - you'd use the google.maps.geometry.spherical library
+                const targetLat = lat + Math.cos(heading * Math.PI / 180) * 0.0001;
+                const targetLng = lng + Math.sin(heading * Math.PI / 180) * 0.0001;
+
+                // Use Geocoding API to get the address at the target coordinates
+                const geocoder = new google.maps.Geocoder();
+                geocoder.geocode({ location: { lat: targetLat, lng: targetLng } }, (results, status) => {
+                    if (status === "OK" && results[0]) {
+                        const address = results[0].formatted_address;
+                        console.log("Looking at address:", address);
+
+                        const addressComponents = results[0].address_components;
+                        // Extract address components
+                        const streetNumber = addressComponents.find(c => c.types.includes('street_number'))?.long_name || '';
+                        const streetName = addressComponents.find(c => c.types.includes('route'))?.long_name || '';
+                        // Store in appData
+                        appData.streetNumber = streetNumber;
+                        appData.streetName = streetName;
+                        appData.fullAddress = results[0].formatted_address;
+
+                        streetDiv.innerHTML = `
+                                        <p>Intersection ID: ${appData.intersectionId}</p>
+                                        <p>Street: ${streetNumber} ${streetName}</p>
+                                        <p>Address: ${results[0].formatted_address}</p>
+                                    `;
+
+                    } else {
+                        console.log("Geocoding failed due to: " + status);
+                    }
+                });
+
+            }
+
+            // First, define a debounce utility function
+            function debounce(func, wait) {
+                let timeout;
+                return function (...args) {
+                    const context = this;
+                    clearTimeout(timeout);
+                    timeout = setTimeout(() => func.apply(context, args), wait);
+                };
+            }
+
+            // Then use it with your event listener
+            let lastProcessedHeading = null;
+
+            panorama.addListener('pov_changed', debounce(() => {
+                const pov = panorama.getPov();
+                const heading = pov.heading;
+
+                // Only process if heading has actually changed
+                if (lastProcessedHeading !== heading) {
+                    lastProcessedHeading = heading;
+
+                    const directions = ['N', 'NE', 'E', 'SE', 'S', 'SW', 'W', 'NW'];
+                    const index = Math.round(((heading % 360) + 360) % 360 / 45);
+                    const direction = directions[index % 8];
+                    appData.direction = direction;
+
+                    console.log('direction', direction);
+
+                    const addr = getAddressCameraIsLookingAt(panorama);
+                    console.log('addr===========>>>>>', addr);
+                }
+            }, 1000)); // 1000ms = 1sec debounce
 
             panorama.addListener('position_changed', async () => {
                 const position = panorama.getPosition();
