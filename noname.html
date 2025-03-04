@@ -69,7 +69,13 @@
                     'line-cap': 'round'
                 },
                 'paint': {
-                    'line-color': 'red',
+                    'line-color': [
+                        'case',
+                        ['==', ['get', 'service'], 'alley'], '#FF8C00', // Orange for alleys
+                        ['==', ['get', 'service'], 'parking_aisle'], '#4682B4', // Steel Blue for parking aisles
+                        ['==', ['get', 'service'], 'driveway'], '#32CD32', // Lime Green for driveways
+                        '#FF0000' // Default red for undefined or other values
+                    ],
                     'line-width': 6
                 }
             });
