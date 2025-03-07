@@ -8,7 +8,7 @@ const photoDir = path.join(__dirname, 'PHOTOS');
 function processPhotos() {
     const data = [];
     // CSV header
-    data.push(['Address', 'Year', 'Month', 'Direction', 'Coordinates', 'Intersection ID', 'Filename']);
+    data.push(['intersection1', 'intersection2', 'Address', 'Year', 'Month', 'Direction', 'Coordinates', 'Intersection ID', 'Filename']);
 
     // Read all files in the PHOTOS directory
     const files = fs.readdirSync(photoDir);
@@ -20,15 +20,19 @@ function processPhotos() {
             // Split by ~
             const parts = nameWithoutExt.split('~');
 
-            if (parts.length === 5) {
-                const [address, date, direction, coords, intersectionId] = parts;
+            if (parts.length === 6) {
+                const [intersection, address, date, direction, coords, intersectionId] = parts;
                 // Extract just the number from 'id-XX'
                 const idNumber = intersectionId.replace('id-', '');
 
                 const [year, month] = date.split('-');
 
+                const [intersection1, intersection2] = intersection.split('&');
+
                 // Add to data array
                 data.push([
+                    intersection1,
+                    intersection2,
                     address,
                     year,
                     month,

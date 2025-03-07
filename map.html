@@ -131,7 +131,11 @@
         const streetDiv = document.getElementById('street');
 
         const doneIntersections = [
-            61, 253, 236, 146, 165, 254, 252, 196, 191, 172
+            112, 114, 115, 113, 49, 54, 359, 351, 350, 353, 352, 111,
+            55, 52, 53, 248, 246, 247, 244, 245, 303, 175, 230, 178, 26, 50,
+            229, 27, 338, 337, 173, 200, 291, 292, 51, 336, 335, 333, 293, 202, 199,
+            171, 177, 201, 170, 179, 174, 197, 280, 166, 147, 237, 281, 62, 341, 332, 304,
+            361, 305, 340
         ]
 
         let panorama;
@@ -242,7 +246,7 @@
                         for (let i = 0; i < data.features.length; i++) {
                             for (let j = i + 1; j < data.features.length; j++) {
                                 const inter = turf.lineIntersect(data.features[i], data.features[j]);
-                                
+
                                 // Get street names from the two intersecting lines
                                 const line1Name = data.features[i].properties?.name || 'Unknown';
                                 const line2Name = data.features[j].properties?.name || 'Unknown';
@@ -382,7 +386,7 @@
                         appData.intersectionId = feature.properties.id || '';
                         appData.intersectionName = feature.properties.intersectionName || '';
                         console.log("Intersection clicked:", appData.intersectionId, appData.intersectionName);
-                        
+
                         // Update street info display
                         streetDiv.innerHTML = `
                             <p>Intersection ID: ${appData.intersectionId}</p>
