@@ -1,0 +1,2912 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "0",
+        "intersectionName": "East Hoster Street & South Lazelle Street"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-82.99497131537075, 39.95149118316281]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "1",
+        "intersectionName": "East Hoster Street & East Hoster Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9958273, 39.951395] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "2",
+        "intersectionName": "East Hoster Street & Unknown"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9955227, 39.9514292] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "3",
+        "intersectionName": "East Hoster Street & Unknown"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9953132, 39.9514527] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "4",
+        "intersectionName": "Unknown & Jaeger Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9902135, 39.9493568] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "5",
+        "intersectionName": "Unknown & South Grant Avenue"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9895596, 39.9493258] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "id": "6", "intersectionName": "Unknown & Brust Street" },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-82.98888308551822, 39.94930019775111]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "7",
+        "intersectionName": "Unknown & East Columbus Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9892534, 39.9468966] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "8",
+        "intersectionName": "Unknown & East Frankfort Street"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-82.98920648131052, 39.947475708756016]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "9",
+        "intersectionName": "Macon Alley & East Sycamore Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9929811, 39.9491133] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "10",
+        "intersectionName": "Macon Alley & East Frankfort Street"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-82.99267368717837, 39.94764398526289]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "11",
+        "intersectionName": "Macon Alley & Alexander Alley"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.992865, 39.948576] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "12",
+        "intersectionName": "Macon Alley & Alexander Alley"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.992815, 39.948343] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "13",
+        "intersectionName": "South Lazelle Street & Berger Alley"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9949361, 39.9512934] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "14",
+        "intersectionName": "South Lazelle Street & East Beck Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.994864, 39.950881] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "15",
+        "intersectionName": "South Lazelle Street & East Beck Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.994855, 39.950823] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "16",
+        "intersectionName": "South Lazelle Street & Jackson Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.995021, 39.95176] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "17",
+        "intersectionName": "South Lazelle Street & East Willow Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.994755, 39.95032] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "18",
+        "intersectionName": "South Lazelle Street & East Blenkner Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.995084, 39.952088] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "19",
+        "intersectionName": "South Lazelle Street & East Blenkner Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9951121, 39.9522359] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "20",
+        "intersectionName": "South Lazelle Street & Unknown"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.994929, 39.9512527] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "21",
+        "intersectionName": "South Lazelle Street & East Willow Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.994748, 39.950285] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "22",
+        "intersectionName": "South Lazelle Street & East Sycamore Street"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-82.9945417018663, 39.94919257807428]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "23",
+        "intersectionName": "South Lazelle Street & Unknown"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9946085, 39.949544] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "24",
+        "intersectionName": "South Lazelle Street & Unknown"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9945754, 39.9493683] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "25",
+        "intersectionName": "South Lazelle Street & East Livingston Avenue"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9952021, 39.9527104] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "26",
+        "intersectionName": "Unknown & City Park Avenue"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-82.99462398922572, 39.94021190459157]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "27",
+        "intersectionName": "Unknown & South Pearl Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9954662, 39.9402686] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "28",
+        "intersectionName": "East Sycamore Street & City Park Avenue"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.996254, 39.948717] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "29",
+        "intersectionName": "East Sycamore Street & South Pearl Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.997093, 39.948618] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "30",
+        "intersectionName": "East Sycamore Street & South Third Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.995326, 39.948827] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "31",
+        "intersectionName": "East Sycamore Street & Unknown"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9969691, 39.9486326] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "32",
+        "intersectionName": "East Sycamore Street & South Third Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.995406, 39.949224] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "33",
+        "intersectionName": "East Sycamore Street & Mohawk Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.993678, 39.949141] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "34",
+        "intersectionName": "East Sycamore Street & East Sycamore Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.990992, 39.949023] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "35",
+        "intersectionName": "East Sycamore Street & South Fifth Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.992694, 39.949094] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "36",
+        "intersectionName": "East Sycamore Street & South Fifth Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.992213, 39.949074] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "37",
+        "intersectionName": "East Sycamore Street & Macon Alley"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9930802, 39.949116] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "38",
+        "intersectionName": "East Sycamore Street & Purdy Alley"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9915017, 39.94905] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "39",
+        "intersectionName": "East Sycamore Street & East Sycamore Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.990891, 39.94902] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "40",
+        "intersectionName": "East Sycamore Street & Jaeger Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.990036, 39.948983] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "41",
+        "intersectionName": "East Sycamore Street & Jaeger Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.990241, 39.948991] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "42",
+        "intersectionName": "East Sycamore Street & South Grant Avenue"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.989586, 39.948966] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "43",
+        "intersectionName": "East Sycamore Street & South Grant Avenue"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.989299, 39.948955] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "44",
+        "intersectionName": "East Sycamore Street & Brust Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.988909, 39.948942] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "45",
+        "intersectionName": "East Sycamore Street & Briggs Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.988257, 39.948917] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "46",
+        "intersectionName": "East Hoster Street & City Park Avenue"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9967548, 39.9512884] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "47",
+        "intersectionName": "East Hoster Street & South Pearl Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9975917, 39.9511862] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "48",
+        "intersectionName": "East Hoster Street & Unknown"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9963311, 39.9513371] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "49",
+        "intersectionName": "City Park Avenue & Nursery Lane"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.994421, 39.9391206] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "50",
+        "intersectionName": "City Park Avenue & Redbud Alley"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.994661, 39.940404] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "51",
+        "intersectionName": "City Park Avenue & East Deshler Avenue"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.994775, 39.940981] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "52",
+        "intersectionName": "City Park Avenue & Unknown"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9945001, 39.939566] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "53",
+        "intersectionName": "City Park Avenue & Unknown"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9944747, 39.9394332] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "54",
+        "intersectionName": "City Park Avenue & Unknown"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9944176, 39.9390816] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "55",
+        "intersectionName": "City Park Avenue & Thurman Avenue"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9945487, 39.9398232] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "56",
+        "intersectionName": "City Park Avenue & East Kossuth Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.995659, 39.945674] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "57",
+        "intersectionName": "City Park Avenue & Stimmel Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.996132, 39.948089] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "58",
+        "intersectionName": "City Park Avenue & Concord Place"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.995252, 39.943562] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "59",
+        "intersectionName": "City Park Avenue & East Willow Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.996518, 39.950086] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "60",
+        "intersectionName": "City Park Avenue & East Columbus Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.995817, 39.946475] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "61",
+        "intersectionName": "City Park Avenue & East Whittier Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9953513, 39.9440762] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "62",
+        "intersectionName": "City Park Avenue & Reinhard Avenue"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.995155, 39.94306] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "63",
+        "intersectionName": "City Park Avenue & East Frankfort Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.995978, 39.947287] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "64",
+        "intersectionName": "City Park Avenue & Lansing Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.995503, 39.944873] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "65",
+        "intersectionName": "City Park Avenue & Unknown"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9969873, 39.952485] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "66",
+        "intersectionName": "City Park Avenue & East Beck Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.996636, 39.950683] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "67",
+        "intersectionName": "City Park Avenue & East Blenkner Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9968682, 39.9518842] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "68",
+        "intersectionName": "City Park Avenue & Unknown"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.997008, 39.9525832] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "69",
+        "intersectionName": "City Park Avenue & Unknown"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9967997, 39.9515245] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "70",
+        "intersectionName": "City Park Avenue & Schiller Alley"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9954279, 39.9444781] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "71",
+        "intersectionName": "City Park Avenue & Unknown"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9963772, 39.9493561] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "72",
+        "intersectionName": "City Park Avenue & East Livingston Avenue"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.99705, 39.952801] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "73",
+        "intersectionName": "Berger Alley & Rader Alley"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9941734, 39.9512697] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "74",
+        "intersectionName": "Berger Alley & Briggs Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.988108, 39.9509773] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "75",
+        "intersectionName": "Berger Alley & Mohawk Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.993536, 39.951238] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "76",
+        "intersectionName": "Berger Alley & South Fifth Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.992551, 39.951187] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "77",
+        "intersectionName": "Berger Alley & Dixon Alley"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.992186, 39.951174] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "78",
+        "intersectionName": "Berger Alley & Macon Alley"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.992901, 39.951206] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "79",
+        "intersectionName": "Berger Alley & Fieser Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9931919, 39.9512195] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "80",
+        "intersectionName": "Berger Alley & South Sixth Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.990924, 39.951092] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "81",
+        "intersectionName": "Berger Alley & Oscar Alley"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9938914, 39.9512553] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "82",
+        "intersectionName": "Berger Alley & South Fourth Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.994529, 39.951279] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "83",
+        "intersectionName": "Berger Alley & Cedar Alley"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.991559, 39.9511256] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "84",
+        "intersectionName": "Berger Alley & South Grant Avenue"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.989085, 39.951017] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "85",
+        "intersectionName": "Berger Alley & Unknown"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.990304, 39.9510677] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "86",
+        "intersectionName": "Rader Alley & East Beck Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9942109, 39.9507942] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "87",
+        "intersectionName": "Rader Alley & Jackson Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9941376, 39.9517229] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "88",
+        "intersectionName": "Rader Alley & East Willow Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9942505, 39.9502912] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "89",
+        "intersectionName": "Rader Alley & East Blenkner Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9941009, 39.9521888] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "90",
+        "intersectionName": "Rader Alley & East Sycamore Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9943377, 39.9491851] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "91",
+        "intersectionName": "East Beck Street & Lathrop Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.987374, 39.950437] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "92",
+        "intersectionName": "East Beck Street & Briggs Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.988145, 39.950472] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "93",
+        "intersectionName": "East Beck Street & Brust Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.988796, 39.950502] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "94",
+        "intersectionName": "East Beck Street & South Grant Avenue"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9891305, 39.9505214] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "95",
+        "intersectionName": "East Beck Street & South Third Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.995711, 39.950784] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "96",
+        "intersectionName": "East Beck Street & Mohawk Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.993577, 39.950765] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "97",
+        "intersectionName": "East Beck Street & South Fifth Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.992589, 39.950719] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "98",
+        "intersectionName": "East Beck Street & Macon Alley"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.992939, 39.9507362] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "99",
+        "intersectionName": "East Beck Street & Oscar Alley"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9939256, 39.9507813] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "100",
+        "intersectionName": "East Beck Street & South Fourth Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.994566, 39.95081] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "101",
+        "intersectionName": "East Beck Street & South Sixth Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.990916, 39.950616] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "102",
+        "intersectionName": "East Beck Street & South Grant Avenue"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.989465, 39.950536] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "103",
+        "intersectionName": "East Beck Street & Unknown"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.990333, 39.9505844] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "104",
+        "intersectionName": "East Beck Street & Dixon Alley"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9922236, 39.950689] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "105",
+        "intersectionName": "East Beck Street & East Beck Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.992561, 39.950717] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "106",
+        "intersectionName": "East Beck Street & Cedar Alley"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.991589, 39.950649] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "107",
+        "intersectionName": "Lathrop Street & Unknown"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.987253, 39.9519837] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "108",
+        "intersectionName": "Lathrop Street & East Livingston Avenue"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.98722, 39.9524006] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "109",
+        "intersectionName": "Lathrop Street & South Lane"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.987351, 39.9507286] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "110",
+        "intersectionName": "Lathrop Street & Berger Alley"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.987336, 39.950942] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "111",
+        "intersectionName": "Thurman Avenue & South Pearl Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9953857, 39.9398687] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "112",
+        "intersectionName": "Nursery Lane & Blackberry Alley"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.989971, 39.938881] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "113",
+        "intersectionName": "Nursery Lane & South Fourth Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.992651, 39.939021] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "114",
+        "intersectionName": "Nursery Lane & Jaeger Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.990689, 39.938919] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "115",
+        "intersectionName": "Nursery Lane & Unknown"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9922498, 39.9390001] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "116",
+        "intersectionName": "Lear Street & South Fifth Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.992631, 39.949893] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "117",
+        "intersectionName": "Lear Street & Jaeger Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.990182, 39.949776] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "118",
+        "intersectionName": "Lear Street & South Sixth Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.990972, 39.949816] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "119",
+        "intersectionName": "Lear Street & Unknown"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9916722, 39.9498485] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "120",
+        "intersectionName": "East Kossuth Street & Mohawk Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.993001, 39.94598] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "121",
+        "intersectionName": "East Kossuth Street & Macon Alley"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.992157, 39.946076] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "122",
+        "intersectionName": "East Kossuth Street & Jaeger Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.989893, 39.945973] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "123",
+        "intersectionName": "East Kossuth Street & South Sixth Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.990708, 39.946014] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "124",
+        "intersectionName": "East Kossuth Street & South Lazelle Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.993867, 39.945881] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "125",
+        "intersectionName": "East Kossuth Street & South Pearl Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.996501, 39.945576] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "126",
+        "intersectionName": "East Kossuth Street & Purdy Alley"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.99107, 39.946028] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "127",
+        "intersectionName": "East Kossuth Street & Ebner Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.988447, 39.945906] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "128",
+        "intersectionName": "East Kossuth Street & South Third Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.994738, 39.94578] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "129",
+        "intersectionName": "East Kossuth Street & South Grant Avenue"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9890263, 39.9459329] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "130",
+        "intersectionName": "East Kossuth Street & Unknown"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.990129, 39.9459844] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "131",
+        "intersectionName": "East Kossuth Street & Purdy Alley"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9911527, 39.9461623] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "132",
+        "intersectionName": "East Kossuth Street & Unknown"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9905133, 39.9460035] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "133",
+        "intersectionName": "East Kossuth Street & South Fifth Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.991632, 39.946136] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "134",
+        "intersectionName": "Briggs Street & Jackson Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.988077, 39.951434] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "135",
+        "intersectionName": "Briggs Street & Berger Alley"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9881017, 39.9510703] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "136",
+        "intersectionName": "Mohawk Street & Alexander Alley"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.993526, 39.94837] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "137",
+        "intersectionName": "Mohawk Street & Jackson Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.993497, 39.9517041] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "138",
+        "intersectionName": "Mohawk Street & East Frankfort Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9933575, 39.9475929] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "139",
+        "intersectionName": "Mohawk Street & East Frankfort Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.993385, 39.9476842] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "140",
+        "intersectionName": "Mohawk Street & East Willow Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9936137, 39.9502633] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "141",
+        "intersectionName": "Mohawk Street & East Blenkner Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9934617, 39.9521596] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "142",
+        "intersectionName": "Mohawk Street & East Livingston Avenue"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.993422, 39.952657] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "143",
+        "intersectionName": "Mohawk Street & Unknown"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.993534, 39.9484104] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "144",
+        "intersectionName": "Mohawk Street & Concord Place"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.992585, 39.943874] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "145",
+        "intersectionName": "Mohawk Street & East Columbus Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.993162, 39.946782] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "146",
+        "intersectionName": "Mohawk Street & East Whittier Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9926887, 39.9443809] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "147",
+        "intersectionName": "Mohawk Street & Reinhard Avenue"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.992482, 39.943377] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "148",
+        "intersectionName": "Mohawk Street & Lansing Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.992842, 39.945179] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "149",
+        "intersectionName": "South Fifth Street & Jackson Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.992513, 39.951644] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "150",
+        "intersectionName": "South Fifth Street & East Blenkner Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9924753, 39.9521106] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "151",
+        "intersectionName": "South Fifth Street & Unknown"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9924596, 39.9523104] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "152",
+        "intersectionName": "South Fifth Street & East Livingston Avenue"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.992442, 39.9526265] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "153",
+        "intersectionName": "South Fifth Street & East Columbus Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.991789, 39.946935] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "154",
+        "intersectionName": "South Fifth Street & Alexander Alley"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9921161, 39.9485529] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "155",
+        "intersectionName": "South Fifth Street & East Frankfort Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.991918, 39.947609] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "156",
+        "intersectionName": "Dixon Alley & Jackson Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9921524, 39.9516241] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "157",
+        "intersectionName": "Dixon Alley & East Blenkner Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9921148, 39.9520864] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "158",
+        "intersectionName": "Macon Alley & Jackson Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9928523, 39.951665] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "159",
+        "intersectionName": "Macon Alley & East Willow Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9929915, 39.9502255] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "160",
+        "intersectionName": "Macon Alley & East Blenkner Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9928195, 39.9521263] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "161",
+        "intersectionName": "Macon Alley & East Livingston Avenue"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9927832, 39.9526366] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "162",
+        "intersectionName": "Macon Alley & East Frankfort Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9924681, 39.9476343] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "163",
+        "intersectionName": "Macon Alley & Concord Place"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9917511, 39.94397] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "164",
+        "intersectionName": "Macon Alley & East Columbus Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.99233, 39.946875] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "165",
+        "intersectionName": "Macon Alley & East Whittier Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9918507, 39.9444766] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "166",
+        "intersectionName": "Macon Alley & Reinhard Avenue"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9916599, 39.9434701] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "167",
+        "intersectionName": "Macon Alley & Lansing Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.992009, 39.94527] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "168",
+        "intersectionName": "Stimmel Street & South Pearl Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9969726, 39.9479893] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "169",
+        "intersectionName": "Stimmel Street & South Third Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9952, 39.948195] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "170",
+        "intersectionName": "Blackberry Alley & Siebert Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.989602, 39.943088] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "171",
+        "intersectionName": "Blackberry Alley & East Stewart Avenue"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.989708, 39.941857] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "172",
+        "intersectionName": "Blackberry Alley & East Whittier Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9894729, 39.9445243] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "173",
+        "intersectionName": "Blackberry Alley & East Deshler Avenue"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.989807, 39.940716] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "174",
+        "intersectionName": "Blackberry Alley & Reinhard Avenue"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9895505, 39.9436643] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "175",
+        "intersectionName": "Blackberry Alley & Thurman Avenue"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9899087, 39.9395743] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "176",
+        "intersectionName": "Blackberry Alley & Concord Place"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9895095, 39.9440896] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "177",
+        "intersectionName": "Blackberry Alley & Unknown"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9896832, 39.9421031] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "178",
+        "intersectionName": "Blackberry Alley & Redbud Alley"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.989859, 39.940142] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "179",
+        "intersectionName": "Siebert Street & Jaeger Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.990319, 39.943126] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "180",
+        "intersectionName": "East Frankfort Street & Purdy Alley"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.991199, 39.947573] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "181",
+        "intersectionName": "East Frankfort Street & Purdy Alley"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.991373, 39.947581] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "182",
+        "intersectionName": "Jaeger Street & Alexander Alley"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.989934, 39.948437] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "183",
+        "intersectionName": "Jaeger Street & East Frankfort Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9897716, 39.947503] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "184",
+        "intersectionName": "Concord Place & Jaeger Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9901987, 39.9440619] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "185",
+        "intersectionName": "Concord Place & South Lazelle Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.993456, 39.943772] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "186",
+        "intersectionName": "Concord Place & Purdy Alley"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9906907, 39.9440889] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "187",
+        "intersectionName": "Concord Place & South Third Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.994329, 39.94367] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "188",
+        "intersectionName": "East Willow Street & South Pearl Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.997361, 39.949992] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "189",
+        "intersectionName": "East Willow Street & East Willow Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.995596, 39.950188] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "190",
+        "intersectionName": "Jaeger Street & East Columbus Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.989819, 39.946923] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "191",
+        "intersectionName": "Jaeger Street & East Whittier Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.990018, 39.9445551] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "192",
+        "intersectionName": "Jaeger Street & Lansing Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.989951, 39.945327] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "193",
+        "intersectionName": "Jaeger Street & Unknown"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9899836, 39.9449492] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "194",
+        "intersectionName": "Jaeger Street & Timbecker Lane"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9898599, 39.9464001] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "195",
+        "intersectionName": "Jaeger Street & Unknown"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9899229, 39.9456406] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "196",
+        "intersectionName": "Jaeger Street & East Whittier Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9901373, 39.9445616] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "197",
+        "intersectionName": "Jaeger Street & Reinhard Avenue"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.990246, 39.943633] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "198",
+        "intersectionName": "Jaeger Street & Concord Place"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9901917, 39.9441261] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "199",
+        "intersectionName": "Jaeger Street & East Stewart Avenue"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.990428, 39.941897] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "200",
+        "intersectionName": "Jaeger Street & East Deshler Avenue"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.990536, 39.940753] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "201",
+        "intersectionName": "Jaeger Street & Unknown"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9904051, 39.9421456] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "202",
+        "intersectionName": "Jaeger Street & Unknown"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9905196, 39.9409181] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "203",
+        "intersectionName": "East Livingston Avenue & South Pearl Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.997884, 39.952684] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "204",
+        "intersectionName": "East Livingston Avenue & Unknown"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9975149, 39.9527358] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "205",
+        "intersectionName": "Fieser Street & Jackson Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9931563, 39.9516819] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "206",
+        "intersectionName": "Fieser Street & East Blenkner Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.993121, 39.9521396] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "207",
+        "intersectionName": "Fieser Street & East Livingston Avenue"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9930811, 39.9526456] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "208",
+        "intersectionName": "East Columbus Street & South Sixth Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.990635, 39.94696] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "209",
+        "intersectionName": "East Columbus Street & South Lazelle Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.994021, 39.946682] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "210",
+        "intersectionName": "East Columbus Street & South Pearl Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.996662, 39.946384] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "211",
+        "intersectionName": "East Columbus Street & Ebner Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.988368, 39.946855] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "212",
+        "intersectionName": "East Columbus Street & South Third Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.994894, 39.946584] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "213",
+        "intersectionName": "East Columbus Street & South Grant Avenue"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9889286, 39.9468814] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "214",
+        "intersectionName": "East Columbus Street & Unknown"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9900525, 39.9469336] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "215",
+        "intersectionName": "East Columbus Street & Purdy Alley"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.991253, 39.946991] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "216",
+        "intersectionName": "South Sixth Street & Alexander Alley"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.990776, 39.948477] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "217",
+        "intersectionName": "South Sixth Street & East Frankfort Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9905906, 39.9475464] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "218",
+        "intersectionName": "South Sixth Street & Timbecker Lane"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9906804, 39.9464477] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "219",
+        "intersectionName": "South Sixth Street & Timbecker Lane"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9906783, 39.9464711] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "220",
+        "intersectionName": "South Sixth Street & Jackson Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.990893, 39.951564] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "221",
+        "intersectionName": "South Sixth Street & East Beck Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.990958, 39.950619] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "222",
+        "intersectionName": "South Sixth Street & East Blenkner Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.990857, 39.952037] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "223",
+        "intersectionName": "South Sixth Street & Unknown"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9908481, 39.9521601] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "224",
+        "intersectionName": "South Sixth Street & Unknown"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9908261, 39.9524667] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "225",
+        "intersectionName": "South Sixth Street & East Livingston Avenue"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9908176, 39.9525555] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "226",
+        "intersectionName": "South Sixth Street & Unknown"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9909618, 39.9494575] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "227",
+        "intersectionName": "Alexander Alley & South Grant Avenue"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9892026, 39.9484361] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "228",
+        "intersectionName": "Alexander Alley & Purdy Alley"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.991402, 39.948514] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "229",
+        "intersectionName": "Redbud Alley & South Fourth Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.992539, 39.940285] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "230",
+        "intersectionName": "Redbud Alley & Jaeger Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.990584, 39.940183] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "231",
+        "intersectionName": "Oscar Alley & Jackson Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9938583, 39.9517144] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "232",
+        "intersectionName": "Oscar Alley & East Livingston Avenue"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9937908, 39.9526499] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "233",
+        "intersectionName": "Oscar Alley & East Blenkner Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9938249, 39.9521785] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "234",
+        "intersectionName": "South Grant Avenue & East Frankfort Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.988998, 39.947466] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "235",
+        "intersectionName": "South Grant Avenue & Forest Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.989104, 39.947952] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "236",
+        "intersectionName": "South Lazelle Street & East Whittier Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9935583, 39.9442823] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "237",
+        "intersectionName": "South Lazelle Street & Reinhard Avenue"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.993356, 39.94327] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "238",
+        "intersectionName": "South Lazelle Street & East Frankfort Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.994181, 39.947493] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "239",
+        "intersectionName": "South Lazelle Street & Lansing Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.993711, 39.945081] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "240",
+        "intersectionName": "South Lazelle Street & Unknown"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9943308, 39.9482374] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "241",
+        "intersectionName": "South Fourth Street & Jackson Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.994492, 39.951736] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "242",
+        "intersectionName": "South Fourth Street & East Livingston Avenue"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9944163, 39.9526754] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "243",
+        "intersectionName": "South Fourth Street & East Blenkner Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.994454, 39.952205] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "244",
+        "intersectionName": "South Fourth Street & Unknown"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9926345, 39.9392115] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "245",
+        "intersectionName": "South Fourth Street & Unknown"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9926411, 39.9391346] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "246",
+        "intersectionName": "South Fourth Street & Unknown"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9926083, 39.9395132] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "247",
+        "intersectionName": "South Fourth Street & Unknown"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9926242, 39.9393302] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "248",
+        "intersectionName": "South Fourth Street & South Fourth Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9925903, 39.9397182] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "249",
+        "intersectionName": "East Whittier Street & Ebner Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9885717, 39.9444771] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "250",
+        "intersectionName": "East Whittier Street & South Grant Avenue"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9891453, 39.9445074] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "251",
+        "intersectionName": "East Whittier Street & South Pearl Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.996189, 39.943981] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "252",
+        "intersectionName": "East Whittier Street & Purdy Alley"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9907857, 39.9445935] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "253",
+        "intersectionName": "East Whittier Street & South Third Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9944293, 39.9441803] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "254",
+        "intersectionName": "East Whittier Street & South Fifth Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9913197, 39.9445392] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "255",
+        "intersectionName": "South Pearl Street & East Frankfort Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.996821, 39.947188] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "256",
+        "intersectionName": "South Pearl Street & Lansing Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.996345, 39.944776] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "257",
+        "intersectionName": "South Pearl Street & East Beck Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.997475, 39.950591] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "258",
+        "intersectionName": "South Pearl Street & East Blenkner Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9977061, 39.9517885] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "259",
+        "intersectionName": "South Pearl Street & Unknown"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9971812, 39.9490702] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "260",
+        "intersectionName": "South Pearl Street & Unknown"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9962216, 39.9441356] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "261",
+        "intersectionName": "South Pearl Street & Unknown"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9975281, 39.9508618] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "262",
+        "intersectionName": "South Pearl Street & Unknown"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.997636, 39.9514199] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "263",
+        "intersectionName": "South Pearl Street & Unknown"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9976171, 39.9513204] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "264",
+        "intersectionName": "South Pearl Street & Unknown"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9977319, 39.951918] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "265",
+        "intersectionName": "South Pearl Street & Unknown"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9977659, 39.9520892] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "266",
+        "intersectionName": "South Pearl Street & Unknown"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.997239, 39.9493665] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "267",
+        "intersectionName": "South Pearl Street & Unknown"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9970228, 39.9482679] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "268",
+        "intersectionName": "South Pearl Street & Unknown"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9970571, 39.9484389] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "269",
+        "intersectionName": "South Pearl Street & Unknown"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9978576, 39.9525511] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "270",
+        "intersectionName": "South Pearl Street & Unknown"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9961138, 39.9436027] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "271",
+        "intersectionName": "South Pearl Street & Schiller Alley"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9962702, 39.9443887] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "272",
+        "intersectionName": "South Pearl Street & Unknown"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9963883, 39.9449971] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "273",
+        "intersectionName": "South Pearl Street & Unknown"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9964453, 39.9452887] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "274",
+        "intersectionName": "Jackson Street & Lathrop Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.987301, 39.951369] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "275",
+        "intersectionName": "Jackson Street & Margraff Alley"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.994839, 39.951753] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "276",
+        "intersectionName": "Jackson Street & Cedar Alley"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.99153, 39.951595] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "277",
+        "intersectionName": "Jackson Street & South Grant Avenue"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.989049, 39.951481] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "278",
+        "intersectionName": "Jackson Street & Unknown"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9902703, 39.9515342] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "279",
+        "intersectionName": "Jackson Street & Lathrop Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.987299, 39.951397] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "280",
+        "intersectionName": "Reinhard Avenue & Purdy Alley"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9905912, 39.943591] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "281",
+        "intersectionName": "Reinhard Avenue & South Third Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.99423, 39.943169] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "282",
+        "intersectionName": "Purdy Alley & Lansing Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.990943, 39.945383] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "283",
+        "intersectionName": "Purdy Alley & Unknown"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9908682, 39.945012] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "284",
+        "intersectionName": "Purdy Alley & Unknown"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9910025, 39.9456854] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "285",
+        "intersectionName": "East Frankfort Street & South Third Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.995054, 39.947394] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "286",
+        "intersectionName": "East Frankfort Street & Ebner Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.988342, 39.947438] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "287",
+        "intersectionName": "East Frankfort Street & South Grant Avenue"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9888771, 39.9474607] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "288",
+        "intersectionName": "Margraff Alley & East Blenkner Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.994803, 39.9522232] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "289",
+        "intersectionName": "Brust Street & Unknown"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9888773, 39.9493792] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "290",
+        "intersectionName": "Brust Street & Unknown"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9888342, 39.9499751] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "291",
+        "intersectionName": "East Deshler Avenue & Unknown"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9907103, 39.9407623] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "292",
+        "intersectionName": "East Deshler Avenue & South Fourth Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.992487, 39.940857] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "293",
+        "intersectionName": "East Deshler Avenue & South Pearl Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.995613, 39.941026] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "294",
+        "intersectionName": "East Blenkner Street & South Third Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9959487, 39.9519902] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "295",
+        "intersectionName": "Lansing Street & South Third Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.994585, 39.944977] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "296",
+        "intersectionName": "Lansing Street & South Fifth Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.991472, 39.945333] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "297",
+        "intersectionName": "Cedar Alley & East Blenkner Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.991491, 39.952062] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "298",
+        "intersectionName": "Ebner Street & Forest Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9884338, 39.9479219] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "299",
+        "intersectionName": "South Grant Avenue & South Grant Avenue"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9889857, 39.9524823] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "300",
+        "intersectionName": "South Grant Avenue & East Blenkner Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.989015, 39.95195] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "301",
+        "intersectionName": "South Grant Avenue & Unknown"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9890001, 39.952158] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "302",
+        "intersectionName": "South Grant Avenue & Unknown"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9889974, 39.952195] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "303",
+        "intersectionName": "Jaeger Street & Thurman Avenue"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9906327, 39.9396113] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "304",
+        "intersectionName": "City Park Avenue & Unknown"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9949054, 39.9417727] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "305",
+        "intersectionName": "City Park Avenue & East Stewart Avenue"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9949822, 39.9421575] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "306",
+        "intersectionName": "East Livingston Avenue & East Livingston Avenue"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.996687, 39.952803] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "307",
+        "intersectionName": "South Third Street & Unknown"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9957809, 39.9511525] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "308",
+        "intersectionName": "South Third Street & Unknown"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9957881, 39.9511898] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "309",
+        "intersectionName": "South Third Street & Unknown"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9952626, 39.948505] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "310",
+        "intersectionName": "South Third Street & East Livingston Avenue"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9960743, 39.9526122] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "311",
+        "intersectionName": "East Livingston Avenue & South Third Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9961067, 39.9527876] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "312",
+        "intersectionName": "South Grant Avenue & Timbecker Lane"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9889822, 39.9463615] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "313",
+        "intersectionName": "Timbecker Lane & Unknown"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9892956, 39.9463753] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "314",
+        "intersectionName": "Timbecker Lane & Unknown"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9900912, 39.9464135] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "315",
+        "intersectionName": "Timbecker Lane & Unknown"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9904669, 39.9464353] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "316",
+        "intersectionName": "East Blenkner Street & Lathrop Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9872617, 39.9518665] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "317",
+        "intersectionName": "East Blenkner Street & Unknown"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9915773, 39.9520654] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "318",
+        "intersectionName": "East Blenkner Street & Unknown"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9895469, 39.9519738] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "319",
+        "intersectionName": "East Blenkner Street & Unknown"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9919803, 39.9520811] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "320",
+        "intersectionName": "East Blenkner Street & Unknown"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9902319, 39.9520057] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "id": "321", "intersectionName": "Unknown & Unknown" },
+      "geometry": { "type": "Point", "coordinates": [-82.9911571, 39.9521723] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "322",
+        "intersectionName": "Unknown & East Livingston Avenue"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9911303, 39.9525695] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "323",
+        "intersectionName": "East Beck Street & Unknown"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9964043, 39.9507083] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "324",
+        "intersectionName": "East Beck Street & Unknown"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9959732, 39.9507554] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "325",
+        "intersectionName": "East Beck Street & Unknown"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9961918, 39.9507315] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "326",
+        "intersectionName": "East Blenkner Street & Unknown"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9975357, 39.951808] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "327",
+        "intersectionName": "East Blenkner Street & Unknown"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9973407, 39.9518302] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "328",
+        "intersectionName": "East Blenkner Street & Unknown"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9966134, 39.9519136] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "329",
+        "intersectionName": "Unknown & Briggs Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9882248, 39.949345] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "330",
+        "intersectionName": "Unknown & East Frankfort Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9900131, 39.9475156] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "331",
+        "intersectionName": "Purdy Alley & Timbecker Lane"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9911587, 39.9464957] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "332",
+        "intersectionName": "Unknown & South Pearl Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.995742, 39.9416702] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "333",
+        "intersectionName": "Unknown & South Pearl Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9955502, 39.9407019] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "id": "334", "intersectionName": "Unknown & Unknown" },
+      "geometry": { "type": "Point", "coordinates": [-82.9958241, 39.9405666] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "335",
+        "intersectionName": "Unknown & South Pearl Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9955318, 39.9406073] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "336",
+        "intersectionName": "Unknown & South Pearl Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9954865, 39.9403735] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "337",
+        "intersectionName": "Unknown & South Pearl Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9954232, 39.9400465] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "338",
+        "intersectionName": "Unknown & South Pearl Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9954494, 39.9401819] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "339",
+        "intersectionName": "Unknown & South Pearl Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9960362, 39.9432007] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "340",
+        "intersectionName": "Unknown & South Pearl Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9959606, 39.9428087] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "341",
+        "intersectionName": "Unknown & South Pearl Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9956997, 39.9414576] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "id": "342", "intersectionName": "Unknown & Unknown" },
+      "geometry": { "type": "Point", "coordinates": [-82.9893936, 39.9521725] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "id": "343", "intersectionName": "Unknown & Unknown" },
+      "geometry": { "type": "Point", "coordinates": [-82.9879334, 39.951978] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "id": "344", "intersectionName": "Unknown & Unknown" },
+      "geometry": { "type": "Point", "coordinates": [-82.9876956, 39.9519687] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "345",
+        "intersectionName": "Unknown & East Livingston Avenue"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9883248, 39.9524484] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "346",
+        "intersectionName": "Unknown & East Livingston Avenue"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9875897, 39.9524166] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "id": "347", "intersectionName": "Unknown & Unknown" },
+      "geometry": { "type": "Point", "coordinates": [-82.990697, 39.9409272] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "id": "348", "intersectionName": "Unknown & Unknown" },
+      "geometry": { "type": "Point", "coordinates": [-82.9972281, 39.9525565] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "id": "349", "intersectionName": "Unknown & Unknown" },
+      "geometry": { "type": "Point", "coordinates": [-82.9974865, 39.9525986] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "350",
+        "intersectionName": "Unknown & South Pearl Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9952991, 39.9393895] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "351",
+        "intersectionName": "Unknown & South Pearl Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9952688, 39.9392276] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "352",
+        "intersectionName": "Unknown & South Pearl Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9953585, 39.9397075] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "353",
+        "intersectionName": "Unknown & South Pearl Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9953272, 39.9395402] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "id": "354", "intersectionName": "Unknown & Unknown" },
+      "geometry": { "type": "Point", "coordinates": [-82.9935541, 39.9395185] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "id": "355", "intersectionName": "Unknown & Unknown" },
+      "geometry": { "type": "Point", "coordinates": [-82.9922272, 39.9393151] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "id": "356", "intersectionName": "Unknown & Unknown" },
+      "geometry": { "type": "Point", "coordinates": [-82.9922419, 39.9391097] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "id": "357", "intersectionName": "Unknown & Unknown" },
+      "geometry": { "type": "Point", "coordinates": [-82.9941145, 39.948345] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "id": "358", "intersectionName": "Unknown & Unknown" },
+      "geometry": { "type": "Point", "coordinates": [-82.9943529, 39.9483187] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "359",
+        "intersectionName": "Unknown & South Pearl Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9952527, 39.9391122] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "360",
+        "intersectionName": "Unknown & Briggs Street"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9881797, 39.949946] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "361",
+        "intersectionName": "East Stewart Avenue & East Stewart Avenue"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.995816, 39.942059] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "362",
+        "intersectionName": "East Livingston Avenue & East Livingston Avenue"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9880458, 39.9524364] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "363",
+        "intersectionName": "East Livingston Avenue & East Livingston Avenue"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9952673, 39.9527115] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "364",
+        "intersectionName": "East Livingston Avenue & Unknown"
+      },
+      "geometry": { "type": "Point", "coordinates": [-82.9957165, 39.9527272] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "365",
+        "intersectionName": "Lathrop Street & Unknown"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-82.98727899289197, 39.95166708196835]
+      }
+    }
+  ]
+}
